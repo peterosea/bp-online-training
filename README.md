@@ -4,4 +4,15 @@
 
 ## 작업 프로세스
 
-JSP가 가능하다면 docker tomcat으로 퍼블리싱 파일을 만들어서 전달할 예정
+JSP가 가능하다면 docker tomcat으로 퍼블리싱 파일만 제작 전달할 예정
+
+### docker-compose.yaml
+
+#### `.env`
+
+```
+PROJECT_NAME=bp-online-training
+PROJECT_PORT=40008
+```
+
+도커 환경설정 파일 예시
