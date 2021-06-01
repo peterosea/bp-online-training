@@ -9,10 +9,3 @@ services:
       - ${PROJECT_PORT}:8080
     volumes:
       - ./src:/usr/local/tomcat/webapps/ROOT
-    external_links:
-      - DB__workwp:mariadb
-
-networks:
-  default:
-    external:
-      name: db_work
