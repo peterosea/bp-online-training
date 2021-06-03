@@ -4,7 +4,7 @@
     "build": "webpack -p -c config/webpack.config.js"
   },
   "devDependencies": {
-    "babel-loader": "^8.2.2",
+    "buble-loader": "^0.5.1",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "css-loader": "^5.2.6",
     "import-glob": "^1.5.0",

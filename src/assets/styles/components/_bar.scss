@@ -1,0 +1,10 @@
+.bar {
+  &-top {
+    background-color: var(--cerulean-blue);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    svg {
+      fill: #fff;
+    }
+  }
+}
