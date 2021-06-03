@@ -1,1 +1,5 @@
+// 라이브러리 & 순서상관없는 scss로드
 @import './autoload/**/*';
+
+// common
+@import './common/root';
