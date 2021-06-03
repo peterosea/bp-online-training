@@ -1,3 +1,3 @@
-  <%@ include file="../partials/footer.jsp" %>
+  <%@ include file="../partials/FNB.jsp" %>
 </body>
 </html>
