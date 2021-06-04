@@ -2,7 +2,11 @@
 @import './autoload/**/*';
 
 // common
+@import './common/reset';
+@import './common/root-zeplin';
 @import './common/root';
+@import './common/global';
 
 // components
 @import './components/bar';
+@import './layouts/GNB';
