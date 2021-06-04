@@ -7,6 +7,9 @@
 @import './common/root';
 @import './common/global';
 
+// layout
+@import './layouts/main';
+
 // components
 @import './components/bar';
-@import './layouts/GNB';
+@import './components/GNB';
