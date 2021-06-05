@@ -5,6 +5,4 @@ export default () => {
 
   const headroom = new Headroom(bt);
   headroom.init();
-  console.log(headroom);
-  console.log('test');
 };
