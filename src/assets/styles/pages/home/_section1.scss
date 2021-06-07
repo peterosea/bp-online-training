@@ -1,0 +1,55 @@
+& {
+  padding-bottom: 120px;
+}
+
+.main {
+  padding-top: 120px;
+  &-title {
+    color: var(--text0);
+    font-size: 48px;
+  }
+  &-content {
+    color: var(--text5);
+    margin-bottom: 50px;
+  }
+  &-list {
+    @include reset-list;
+    display: flex;
+
+    @supports not (gap: 34px) {
+      > li:not(:last-child) {
+        margin-right: 34px;
+      }
+    }
+
+    @supports (gap: 34px) {
+      gap: 34px;
+    }
+
+    &-thumb {
+      background-color: #2464ac;
+      width: 200px;
+      border-radius: 0 20px 0 20px;
+      padding-top: 27px;
+      padding-bottom: 27px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 28px;
+
+      svg {
+        height: 54px;
+      }
+    }
+    &-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: var(--text2);
+      margin-bottom: 16p;
+    }
+    &-content {
+      color: var(--text3);
+      word-break: keep-all;
+    }
+  }
+}

@@ -1,3 +1,6 @@
 .home {
   @import './hero-section';
+  .section1 {
+    @import './section1';
+  }
 }
