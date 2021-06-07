@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  tomcat:
+    env_file:
+      - ./.env
+    image: tomcat:latest
+    container_name: WS__${PROJECT_NAME}
+    expose:
+      - 8080
+    volumes:
+      - ${PWD}/src:/usr/local/tomcat/webapps/ROOT
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.${PROJECT_NAME_SHORT}.rule=Host(`${PROJECT_NAME_SHORT}.local`)
+
+networks:
+  default:
+    external:
+      name: proxy_net
