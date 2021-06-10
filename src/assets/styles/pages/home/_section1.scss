@@ -1,12 +1,11 @@
-& {
-  padding-bottom: 120px;
-}
+// & {
+// }
 
 .main {
   padding-top: 120px;
   &-title {
     color: var(--text0);
-    font-size: 48px;
+    @include title;
   }
   &-content {
     color: var(--text5);

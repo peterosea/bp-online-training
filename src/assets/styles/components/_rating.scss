@@ -1,0 +1,33 @@
+.rating-star {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  gap: 4px;
+  font-size: 1em;
+
+  &-item {
+    --fill: #cccccc;
+    svg {
+      width: 1em;
+      height: 1em;
+      fill: var(--fill);
+    }
+  }
+  // active style
+  @for $i from 1 through 5 {
+    &[data-rating='#{$i}'] {
+      > .rating-star-item:nth-child(-n + #{$i}) {
+        --fill: #006ddb;
+      }
+    }
+  }
+
+  @for $i from 1 through 10 {
+    &[data-rating-max='#{$i}'] {
+      > .rating-star-item:nth-child(n + #{$i + 1}) {
+        display: none;
+      }
+    }
+  }
+}
