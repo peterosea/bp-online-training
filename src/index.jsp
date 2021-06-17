@@ -13,8 +13,8 @@
         <div class="swiper-slide hero-slide" data-bash="slide1">
           <div class="container hero-slide-container">
             <div class="hero-slide-img">
-              <img src="https://peterosea.github.io/sampyo/Proposal/A/assets/img/hero-slider-bg1.png"
-                srcset="https://peterosea.github.io/sampyo/Proposal/A/assets/img/hero-slider-bg1@2x.png 2x, https://peterosea.github.io/sampyo/Proposal/A/assets/img/hero-slider-bg1@3x.png 3x">
+              <img src="https://peterosea.github.io/sampyo/A/assets/img/hero-slider-bg1.png"
+                srcset="https://peterosea.github.io/sampyo/A/assets/img/hero-slider-bg1@2x.png 2x, https://peterosea.github.io/sampyo/A/assets/img/hero-slider-bg1@3x.png 3x">
             </div>
             <div class="hero-slide-content">
               <div class="hero-slide-content-row">
@@ -33,8 +33,8 @@
         <div class="swiper-slide hero-slide" data-bash="slide2">
           <div class="container hero-slide-container">
             <div class="hero-slide-img">
-              <img src="https://peterosea.github.io/sampyo/Proposal/A/assets/img/hero-slider-bg2.png"
-                srcset="https://peterosea.github.io/sampyo/Proposal/A/assets/img/hero-slider-bg2@2x.png 2x, https://peterosea.github.io/sampyo/Proposal/A/assets/img/hero-slider-bg2@3x.png 3x">
+              <img src="https://peterosea.github.io/sampyo/A/assets/img/hero-slider-bg2.png"
+                srcset="https://peterosea.github.io/sampyo/A/assets/img/hero-slider-bg2@2x.png 2x, https://peterosea.github.io/sampyo/A/assets/img/hero-slider-bg2@3x.png 3x">
             </div>
             <div class="hero-slide-content">
               <div class="hero-slide-content-row">
@@ -53,8 +53,8 @@
         <div class="swiper-slide hero-slide" data-bash="slide2">
           <div class="container hero-slide-container">
             <div class="hero-slide-img">
-              <img src="https://peterosea.github.io/sampyo/Proposal/A/assets/img/hero-slider-bg3.png"
-                srcset="https://peterosea.github.io/sampyo/Proposal/A/assets/img/hero-slider-bg3@2x.png 2x, https://peterosea.github.io/sampyo/Proposal/A/assets/img/hero-slider-bg3@3x.png 3x">
+              <img src="https://peterosea.github.io/sampyo/A/assets/img/hero-slider-bg3.png"
+                srcset="https://peterosea.github.io/sampyo/A/assets/img/hero-slider-bg3@2x.png 2x, https://peterosea.github.io/sampyo/A/assets/img/hero-slider-bg3@3x.png 3x">
             </div>
             <div class="hero-slide-content">
               <div class="hero-slide-content-row">
