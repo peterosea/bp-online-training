@@ -1,3 +1,3 @@
 <%!
-  String zeplin = "/assets/zeplin";
+  String zeplin = "/media/zeplin";
 %>
