@@ -1,1 +1,24 @@
+// 라이브러리 & 순서상관없는 scss로드
 @import './autoload/**/*';
+
+@import './functions/**/*';
+
+// common
+@import './common/reset';
+@import './common/root-zeplin';
+@import './common/root';
+@import './common/global';
+
+// layout
+@import './layouts/main';
+
+// components
+@import './components/bar';
+@import './components/GNB';
+@import './components/FNB';
+@import './components/rating';
+@import './components/icon';
+
+// pages
+@import './pages/home';
+@import './pages/page-class';

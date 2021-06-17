@@ -1,0 +1,126 @@
+@at-root {
+  :root {
+    --barClassHeight: 200px;
+  }
+}
+
+&-class {
+  position: relative;
+  color: var(--invert-text0);
+  // page header 요소
+  height: var(--barClassHeight);
+  transition: height 0.3s ease-in-out;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+
+    &-left {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    &-right {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &-title {
+    font-size: 48px;
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: bold;
+  }
+  &-info {
+    @include reset-list;
+
+    display: flex;
+    font-size: 20px;
+    opacity: 0.5;
+
+    @supports (gap: 12px) {
+      column-gap: 12px;
+      > li:not(:last-child) {
+        padding-right: 12px;
+      }
+    }
+    @supports not (gap: 12px) {
+      > li:not(:last-child) {
+        margin-right: 12px;
+      }
+    }
+
+    > li:not(:last-child) {
+      position: relative;
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: var(--invert-text0);
+        width: 1px;
+        height: 1em;
+        top: 50%;
+        right: 0;
+        transform: translate(100%, -50%);
+      }
+    }
+
+    .value {
+      margin-right: 0.25em;
+    }
+  }
+  // class container right
+  &-btn {
+    padding: 28px 54px;
+    color: var(--invert-text0);
+    font-size: 24px;
+    border-radius: 0;
+    &:hover {
+      color: var(--invert-text0);
+    }
+    &.apply {
+      background-color: var(--blue-ruin);
+      font-weight: 600;
+    }
+    &.review {
+      display: none;
+      font-weight: normal;
+      border-left: 1px solid rgba(var(--RGB-invert-text0), 0.2);
+    }
+  }
+}
+
+@mixin bar-class-small {
+  & + main {
+    --barClassHeight: 56px;
+  }
+  .bar-bg {
+    display: none;
+  }
+  .bar-class {
+    --barClassHeight: 56px;
+    background-color: var(--theatre-blue);
+
+    &-container {
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+    &-title {
+      margin-bottom: 0;
+      font-size: 24px;
+    }
+    &-info {
+      display: none;
+    }
+    &-btn {
+      font-size: 18px;
+      &.review {
+        display: block;
+      }
+    }
+  }
+}

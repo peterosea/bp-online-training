@@ -28,29 +28,15 @@ module.exports = {
       },
       {
         test: /\.s[ac]ss$/i,
-        use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader',
-          'sass-loader',
-          {
-            loader: 'postcss-loader',
-            options: {
-              postcssOptions: { path: __dirname, ctx: config },
-              sourceMap: config.enabled.sourceMaps,
-            },
-          },
-        ],
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
         exclude: /node_modules/,
       },
       {
         test: /\.js$/i,
         exclude: /node_modules/,
-        use: ['babel-loader'],
+        use: ['buble-loader'],
       },
     ],
-  },
-  externals: {
-    jquery: 'jQuery',
   },
   plugins: [
     new MiniCssExtractPlugin({
