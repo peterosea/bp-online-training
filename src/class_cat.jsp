@@ -2,10 +2,10 @@
 <%@ include file="global-var.jsp" %>
 <%@ include file="views/layouts/body-open.jsp" %>
 <%!
-  String route = "page-single-class";
+  String route = "page-classCat";
 %>
-<body class="page-single-class">
-<main class="class">
+<body class="page-classCat">
+<main class="class cat">
   <div class="section s1">
     <div class="container s1-container">
       <div class="row s1-row">
@@ -57,7 +57,7 @@
               <div class="class-goal-btnWrap">
                 <a href="#" class="btn down">
                   <div class="icon-wrap">
-                    <div class="icon-down"></div>
+                    <div class="icon-down dark"></div>
                     <div class="icon-label">파일 다운로드</div>
                   </div>
                 </a>

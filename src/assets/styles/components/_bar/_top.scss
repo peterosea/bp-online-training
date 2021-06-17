@@ -18,7 +18,9 @@
     fill: #fff;
   }
   &:not(.headroom--top) {
+    @include bar-pageheader-samll;
     @include bar-class-small;
+    @include bar-class-single-small;
 
     & + main {
       --barTopHeight: 0px;
