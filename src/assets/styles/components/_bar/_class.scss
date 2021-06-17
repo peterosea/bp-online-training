@@ -1,6 +1,6 @@
 @at-root {
   :root {
-    --barClassHeight: 200px;
+    --barPageheaderHight: 0px;
   }
 }
 
@@ -8,7 +8,7 @@
   position: relative;
   color: var(--invert-text0);
   // page header 요소
-  height: var(--barClassHeight);
+  height: var(--barPageheaderHight);
   transition: height 0.3s ease-in-out;
 
   &-container {
@@ -96,13 +96,13 @@
 
 @mixin bar-class-small {
   & + main {
-    --barClassHeight: 56px;
+    --barPageheaderHight: 56px;
   }
   .bar-bg {
     display: none;
   }
   .bar-class {
-    --barClassHeight: 56px;
+    --barPageheaderHight: 56px;
     background-color: var(--theatre-blue);
 
     &-container {
