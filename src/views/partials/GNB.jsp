@@ -48,7 +48,8 @@
       </div>
       <ul class="gnb-personal">
         <li class="gnb-personal-item gnb-personal-noti">
-          <a href="#">
+          <button class="gnb-menu-item gnb-submenu-btn disable_arrow p-0" type="button" id="notiDropdown" data-bs-toggle="dropdown"
+            aria-expanded="false">
             <svg xmlns="http://www.w3.org/2000/svg" id="icon24_AR1" width="24" height="24" viewBox="0 0 24 24">
               <g transform="translate(1.182)">
                 <path d="M761.9 494.42a2.881 2.881 0 0 0 2.882-2.881h-5.763a2.881 2.881 0 0 0 2.881 2.881z" transform="translate(-751.079 -470.42)"/>
@@ -57,7 +58,30 @@
                 <path class="bell" stroke="white" stroke-width="1" fill="#006ddb" d="M781.639 428.9a3.661 3.661 0 1 0-3.661-3.661 3.661 3.661 0 0 0 3.661 3.661z" transform="translate(-764.69 -420.202)"/>
               </g>
             </svg>
-          </a>
+          </button>
+          <ul class="dropdown-menu gnb-submenu noti-submenu" aria-labelledby="notiDropdown">
+            <li class="noti-item">
+              <div class="noti-header">Architecture & Interior</div>
+              <div class="noti-content">
+                <a href="#">설계/인테리어</a> 분야 클래스가 
+                새로 오픈하였습니다.
+              </div>
+            </li>
+            <li class="noti-item">
+              <div class="noti-header">Architecture & Interior</div>
+              <div class="noti-content">
+                <a href="#">설계/인테리어</a> 분야 클래스가 
+                새로 오픈하였습니다.
+              </div>
+            </li>
+            <li class="noti-item">
+              <div class="noti-content">
+                고객님의 수강 종료일이<br/>
+                <b id="">15</b>일 남았습니다.<br/>
+                <a href="#" class="history">내 수강내역 확인하기</a>
+              </div>
+            </li>
+          </ul>
         </li>
         <li class="gnb-personal-item gnb-personal-account">
           <button class="gnb-menu-item gnb-submenu-btn disable_arrow p-0" type="button" id="accountModal" data-bs-toggle="dropdown"
@@ -105,10 +129,10 @@
             <%-- 로그인 상태 end --%>
             <%-- 로그인 안된 상태 start --%>
             <li>
-              <a class="dropdown-item def" href="#">로그인</a>
+              <a class="dropdown-item" href="#">로그인</a>
             </li>
             <li>
-              <a class="dropdown-item def" href="#">회원가입</a>
+              <a class="dropdown-item" href="#">회원가입</a>
             </li>
             <%-- 로그인 안된 상태 end --%>
           </ul>

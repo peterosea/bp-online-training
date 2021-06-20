@@ -138,6 +138,33 @@
       &.on .bell {
         opacity: 1;
       }
+      .noti {
+        &-submenu {
+          padding: 0;
+        }
+        &-item {
+          padding: 16px 24px;
+          margin: 0;
+          &:not(:last-child) {
+            border-bottom: 1px solid var(--super-silver);
+          }
+        }
+        &-header {
+          font-size: 16px;
+          color: var(--black-out);
+          margin-bottom: 8px;
+        }
+        &-content {
+          color: var(--text3);
+          a {
+            color: var(--blue-ruin);
+          }
+          .history,
+          b {
+            color: var(--text0);
+          }
+        }
+      }
     }
     &-account {
       svg {
