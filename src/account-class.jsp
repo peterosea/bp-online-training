@@ -60,26 +60,56 @@
               <ul class="accordion-body-list">
                 <li class="accordion-body-list-item done">
                   <span class="title">Getting Started</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">Complete</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">다시보기</a>
                 </li>
                 <li class="accordion-body-list-item done">
                   <span class="title">Creating New Document</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">Complete</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">다시보기</a>
                 </li>
                 <li class="accordion-body-list-item done">
                   <span class="title">Prepferencrs Overview</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">Complete</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">다시보기</a>
                 </li>
                 <li class="accordion-body-list-item current">
                   <span class="title">Document Setup &Customization</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">50%</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">강의보기</a>
                 </li>
                 <li class="accordion-body-list-item">
                   <span class="title">Document Navigation</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">0</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">강의보기</a>
                 </li>
                 <li class="accordion-body-list-item">
                   <span class="title">Course 1 review Quiz</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">0</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">강의보기</a>
                 </li>
               </ul>
@@ -120,26 +150,56 @@
               <ul class="accordion-body-list">
                 <li class="accordion-body-list-item done">
                   <span class="title">Getting Started</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">Complete</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">다시보기</a>
                 </li>
                 <li class="accordion-body-list-item done">
                   <span class="title">Creating New Document</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">Complete</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">다시보기</a>
                 </li>
                 <li class="accordion-body-list-item done">
                   <span class="title">Prepferencrs Overview</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">Complete</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">다시보기</a>
                 </li>
                 <li class="accordion-body-list-item current">
                   <span class="title">Document Setup &Customization</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">50%</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">강의보기</a>
                 </li>
                 <li class="accordion-body-list-item">
                   <span class="title">Document Navigation</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">0</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">강의보기</a>
                 </li>
                 <li class="accordion-body-list-item">
                   <span class="title">Course 1 review Quiz</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">0</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">강의보기</a>
                 </li>
               </ul>
@@ -176,26 +236,56 @@
               <ul class="accordion-body-list">
                 <li class="accordion-body-list-item done">
                   <span class="title">Getting Started</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">Complete</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">다시보기</a>
                 </li>
                 <li class="accordion-body-list-item done">
                   <span class="title">Creating New Document</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">Complete</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">다시보기</a>
                 </li>
                 <li class="accordion-body-list-item done">
                   <span class="title">Prepferencrs Overview</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">Complete</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">다시보기</a>
                 </li>
                 <li class="accordion-body-list-item current">
                   <span class="title">Document Setup &Customization</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">50%</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">강의보기</a>
                 </li>
                 <li class="accordion-body-list-item">
                   <span class="title">Document Navigation</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">0</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">강의보기</a>
                 </li>
                 <li class="accordion-body-list-item">
                   <span class="title">Course 1 review Quiz</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">0</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">강의보기</a>
                 </li>
               </ul>
@@ -254,6 +344,7 @@
               <ul class="accordion-body-list">
                 <li class="accordion-body-list-item done">
                   <span class="title">Getting Started</span>
+
                   <a class="link" href="#">다시보기</a>
                 </li>
                 <li class="accordion-body-list-item done">
@@ -314,26 +405,56 @@
               <ul class="accordion-body-list">
                 <li class="accordion-body-list-item done">
                   <span class="title">Getting Started</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">Complete</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">다시보기</a>
                 </li>
                 <li class="accordion-body-list-item done">
                   <span class="title">Creating New Document</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">Complete</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">다시보기</a>
                 </li>
                 <li class="accordion-body-list-item done">
                   <span class="title">Prepferencrs Overview</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">Complete</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">다시보기</a>
                 </li>
                 <li class="accordion-body-list-item current">
                   <span class="title">Document Setup &Customization</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">50%</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">강의보기</a>
                 </li>
                 <li class="accordion-body-list-item">
                   <span class="title">Document Navigation</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">0</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">강의보기</a>
                 </li>
                 <li class="accordion-body-list-item">
                   <span class="title">Course 1 review Quiz</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">0</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">강의보기</a>
                 </li>
               </ul>
@@ -370,26 +491,56 @@
               <ul class="accordion-body-list">
                 <li class="accordion-body-list-item done">
                   <span class="title">Getting Started</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">Complete</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">다시보기</a>
                 </li>
                 <li class="accordion-body-list-item done">
                   <span class="title">Creating New Document</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">Complete</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">다시보기</a>
                 </li>
                 <li class="accordion-body-list-item done">
                   <span class="title">Prepferencrs Overview</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">Complete</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">다시보기</a>
                 </li>
                 <li class="accordion-body-list-item current">
                   <span class="title">Document Setup &Customization</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">50%</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">강의보기</a>
                 </li>
                 <li class="accordion-body-list-item">
                   <span class="title">Document Navigation</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">0</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">강의보기</a>
                 </li>
                 <li class="accordion-body-list-item">
                   <span class="title">Course 1 review Quiz</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-label">0</div>
+                    </div>
+                  </div>
                   <a class="link" href="#">강의보기</a>
                 </li>
               </ul>
