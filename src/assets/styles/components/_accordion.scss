@@ -24,7 +24,7 @@
       padding: 28px 0;
       position: relative;
       align-items: flex-start;
-      color: var(--black-out);
+      color: var(--text1);
       box-shadow: none;
 
       &:after {
@@ -110,6 +110,9 @@
             .link {
               border-color: var(--cerebral-grey);
               background-color: var(--super-silver);
+              color: var(--text3);
+            }
+            .time {
               color: var(--text3);
             }
           }
@@ -236,7 +239,7 @@
       &-title {
         font-size: 2.5rem;
         @include textDecoration;
-        color: var(--black-out);
+        color: var(--text1);
         font-weight: bold;
       }
     }
@@ -246,6 +249,39 @@
     &-description {
       display: block;
       max-width: 425px;
+    }
+  }
+}
+
+@mixin modal {
+  .accordion {
+    &-info {
+      flex-wrap: nowrap;
+      @include gap(20px, x);
+      width: 100%;
+      justify-content: flex-start;
+      &-title {
+        font-size: 28px;
+        text-shadow: none;
+        box-shadow: none;
+        margin: 0;
+      }
+      &-description {
+        font-size: 18px;
+        color: var(--black-out, #000000);
+      }
+      &-right {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
+    }
+    &-button:after {
+      width: 24px;
+      height: 24px;
+    }
+    &-body-list-item.current {
+      font-weight: normal;
     }
   }
 }
