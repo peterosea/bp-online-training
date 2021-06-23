@@ -21,7 +21,7 @@
             <input type="text" class="input-item"">
           </div>
           <div class="input-inputWrap">
-            <textarea class="input-item" name="" id="" cols="30" rows="7" placeholder="내용을 입력해주세요."></textarea>
+            <textarea class="input-item" name="" cols="30" rows="7" placeholder="내용을 입력해주세요."></textarea>
           </div>
         </div>
       </div>

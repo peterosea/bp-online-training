@@ -17,7 +17,7 @@
         </p>
         <div class="input-inputWrap mb-3">
           <input type="text" class="input-item" placeholder="제목">
-          <textarea class="input-item w-100" id="" cols="30" rows="7" placeholder="내용을 입력해주세요."></textarea>
+          <textarea class="input-item w-100" cols="30" rows="7" placeholder="내용을 입력해주세요."></textarea>
         </div>
         <div class="input-label">
           <input type="checkbox" class="input-checkbox" id="privacy-policy">

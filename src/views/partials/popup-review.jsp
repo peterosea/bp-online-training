@@ -17,7 +17,7 @@
           빌딩캠퍼스 할인쿠폰을 드립니다.<br/>
           <span class="primary">※ 매월 말 일괄 발급 후 개별통보</span>
         </p>
-        <textarea class="input-item w-100" id="" cols="30" rows="7" placeholder="내용을 입력해주세요."></textarea>
+        <textarea class="input-item w-100" cols="30" rows="7" placeholder="내용을 입력해주세요."></textarea>
       </div>
       <div class="modal-footer">
         <ul class="tab">
@@ -53,7 +53,7 @@
           빌딩캠퍼스 할인쿠폰을 드립니다.<br/>
           <span class="primary">※ 매월 말 일괄 발급 후 개별통보</span>
         </p>
-        <textarea class="input-item w-100" id="" cols="30" rows="7" placeholder="내용을 입력해주세요."></textarea>
+        <textarea class="input-item w-100" cols="30" rows="7" placeholder="내용을 입력해주세요."></textarea>
       </div>
       <div class="modal-footer">
         <ul class="tab">

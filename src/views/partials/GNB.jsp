@@ -105,7 +105,7 @@
             <li class="noti-item">
               <div class="noti-content">
                 고객님의 수강 종료일이<br/>
-                <b id="">15</b>일 남았습니다.<br/>
+                <b>15</b>일 남았습니다.<br/>
                 <a href="#" class="history">내 수강내역 확인하기</a>
               </div>
             </li>
