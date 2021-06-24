@@ -1,4 +1,5 @@
-@use '../functions/textDecoration' as t;
+@use '../functions/textDecoration' as *;
+@use '../functions/gap' as *;
 @use '../functions/ui' as ui;
 // bootstrap accordion
 @mixin style1 {
@@ -6,6 +7,7 @@
     &-header {
       &-main {
         padding-right: 20px;
+        align-self: center;
       }
       &-title {
         font-size: 20px;
@@ -22,7 +24,7 @@
       padding: 28px 0;
       position: relative;
       align-items: flex-start;
-      color: var(--black-out);
+      color: var(--text1);
       box-shadow: none;
 
       &:after {
@@ -52,7 +54,7 @@
           font-size: 18px;
           font-weight: bold;
           line-height: 1;
-          @include t.textDecoration(var(--bg0), var(--text0), 1px);
+          @include textDecoration(var(--bg0), var(--text0), 1px);
         }
       }
       &-list {
@@ -98,6 +100,8 @@
             transform: translateY(-50%);
           }
           &.done {
+            --bar: var(--simply-blue);
+            --label: var(--simply-blue);
             color: var(--text2);
             &:after {
               border: none;
@@ -106,11 +110,17 @@
             .link {
               border-color: var(--cerebral-grey);
               background-color: var(--super-silver);
-              color: var(--squant);
+              color: var(--text3);
+            }
+            .time {
+              color: var(--text3);
             }
           }
           &.current {
+            --bar: linear-gradient(to right, var(--blue-ruin) 13%, #00aced 89%);
+            --label: var(--blue-ruin);
             color: var(--blue-ruin);
+            font-weight: 700;
             &::after {
               border-color: var(--blue-ruin);
             }
@@ -133,7 +143,104 @@
             border: 1px solid var(--dhusar-grey);
             border-radius: 2px;
           }
+          &.done .progress-label {
+            left: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--dhusar-grey);
+            border-radius: 999px;
+            border: solid 1px var(--super-silver);
+            box-shadow: none;
+            margin-left: 8px;
+            display: block;
+          }
+          &.current .progress-label {
+            right: 0;
+            top: 0;
+            display: block;
+            transform: translate(50%, calc(-100% - 8px));
+            font-size: 14px;
+          }
+          .progress {
+            height: 4px;
+            max-width: 600px;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            overflow: visible;
+            &:after {
+              content: '';
+              display: block;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: var(--zhen-zhu-bai-pearl);
+              border-radius: 999px;
+              z-index: -1;
+            }
+            &-bar {
+              background: var(--bar);
+              border-radius: 999px;
+              position: relative;
+              overflow: visible;
+            }
+            &-label {
+              color: var(--label);
+              position: absolute;
+              padding: 6px 16px 5px;
+              box-shadow: 3px 3px 9px 0 rgba(0, 0, 0, 0.16);
+              background-color: var(--bg0);
+              border-radius: 4px;
+              display: none;
+
+              &:after {
+                width: 0;
+                height: 0;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 8px solid var(--bg0);
+                content: ' ';
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+              }
+            }
+          }
         }
+      }
+    }
+    &-info {
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--black-out);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      &-left {
+        display: flex;
+        align-items: center;
+        @include gap(20px);
+      }
+      &-right {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+      }
+      &-thumbnail {
+        img {
+          height: 100px;
+        }
+      }
+      &-title {
+        font-size: 2.5rem;
+        @include textDecoration;
+        color: var(--text1);
+        font-weight: bold;
       }
     }
   }
@@ -142,6 +249,39 @@
     &-description {
       display: block;
       max-width: 425px;
+    }
+  }
+}
+
+@mixin modal {
+  .accordion {
+    &-info {
+      flex-wrap: nowrap;
+      @include gap(20px, x);
+      width: 100%;
+      justify-content: flex-start;
+      &-title {
+        font-size: 28px;
+        text-shadow: none;
+        box-shadow: none;
+        margin: 0;
+      }
+      &-description {
+        font-size: 18px;
+        color: var(--black-out, #000000);
+      }
+      &-right {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
+    }
+    &-button:after {
+      width: 24px;
+      height: 24px;
+    }
+    &-body-list-item.current {
+      font-weight: normal;
     }
   }
 }

@@ -7,14 +7,18 @@
   }
 }
 
-.page-single-class {
-  --barPageheaderHight: 200px;
-}
-
 .class {
   // layout
-  .s1 {
-    @import './section1';
+  &.cat {
+    .s1 {
+      @import './section1';
+    }
+    .s2 {
+      @import './section2';
+    }
+  }
+  &.single {
+    @import './single';
   }
   // style
   font-size: 1.125rem;
@@ -27,7 +31,7 @@
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 8px;
-    color: var(--black-out);
+    color: var(--text1);
     + p {
       margin-bottom: 0;
     }
@@ -117,5 +121,12 @@
   &-accordion {
     // use bootstrap accordion
     @include accordion.style1;
+  }
+  &-review {
+    font-size: 18px;
+
+    &-item {
+      padding-bottom: 32px;
+    }
   }
 }

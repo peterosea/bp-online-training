@@ -1,0 +1,49 @@
+.btn {
+  line-height: 1;
+
+  &.dark {
+    background-color: var(--black-out);
+    color: var(--invert-text0);
+    border-radius: 0;
+    padding: 1.14rem 2.5rem;
+    line-height: 1;
+    font-size: inherit;
+  }
+  &.primary {
+    background-color: var(--theatre-blue);
+    color: var(--invert-text0);
+    border-radius: 0;
+    padding: 1.14rem 2.5rem;
+    font-size: inherit;
+  }
+  &.tool {
+    border: 1px solid var(--cerebral-grey);
+    border-radius: 2px;
+  }
+  &.whiteout {
+    background-color: var(--whiteout);
+  }
+  &.border {
+    &-def {
+      border: 1px solid var(--simple-serenity);
+    }
+  }
+  &-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border: none;
+    color: var(--invert-text0);
+    font-size: 18px;
+    border-radius: 2px;
+    white-space: nowrap;
+    width: 150px;
+    &.primary {
+      background-color: var(--theatre-blue);
+    }
+    &.dark {
+      background-color: var(--black-out);
+    }
+  }
+}

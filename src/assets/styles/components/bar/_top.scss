@@ -7,7 +7,7 @@
 &-top {
   height: var(--barTopHeight);
   position: fixed;
-  z-index: 9000;
+  z-index: 900;
   width: 100%;
   top: 0;
   left: 0;
@@ -18,7 +18,9 @@
     fill: #fff;
   }
   &:not(.headroom--top) {
+    @include bar-pageheader-samll;
     @include bar-class-small;
+    @include bar-class-single-small;
 
     & + main {
       --barTopHeight: 0px;

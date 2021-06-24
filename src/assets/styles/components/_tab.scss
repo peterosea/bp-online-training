@@ -1,0 +1,28 @@
+.tab {
+  @include reset-list;
+  display: flex;
+  flex-wrap: nowrap;
+
+  li {
+    width: 100%;
+  }
+  &-item {
+    text-align: center;
+    border: 1px solid var(--common-feldspar);
+    color: var(--text1);
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    background-color: var(--bg0);
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &.current,
+    &.active {
+      border-color: var(--theatre-blue);
+      color: var(--invert-text0);
+      background-color: var(--theatre-blue);
+      border-radius: 0;
+    }
+  }
+}

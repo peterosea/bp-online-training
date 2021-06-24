@@ -1,0 +1,61 @@
+@use '../../components/accordion';
+
+.modal {
+  &-dialog {
+    max-width: 570px;
+  }
+  &-content {
+    border-radius: 0;
+    border-top: 8px solid var(--blueberry-twist);
+    > [class*='modal'] {
+      padding-left: 44px;
+      padding-right: 44px;
+    }
+  }
+  &-body {
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+  &-header {
+    border-bottom: none;
+    padding-top: 44px;
+    padding-bottom: 14px;
+    &.hasBorder {
+      border: none;
+      border-bottom: 1px solid var(--super-silver);
+    }
+  }
+  &-footer {
+    padding-top: 10px;
+    padding-bottom: 44px;
+    justify-content: flex-start;
+    border-top: none;
+
+    .tab {
+      width: 100%;
+      @include gap(4px);
+      font-size: 16px;
+    }
+  }
+  &-title {
+    font-size: 2rem;
+    color: var(--text1);
+    font-weight: bold;
+  }
+  .find {
+    color: var(--text3);
+  }
+  .tab-item {
+    font-weight: 600;
+  }
+  .description {
+    color: var(--text3);
+    margin-top: 28px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  @include accordion.style1;
+  @include accordion.modal;
+}

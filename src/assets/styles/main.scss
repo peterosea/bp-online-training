@@ -8,17 +8,30 @@
 @import './common/root-zeplin';
 @import './common/root';
 @import './common/global';
+@import './common/token';
 
 // layout
 @import './layouts/main';
 
 // components
+@import './components/icon';
 @import './components/bar';
 @import './components/GNB';
 @import './components/FNB';
 @import './components/rating';
-@import './components/icon';
+@import './components/card';
+@import './components/tab';
+@import './components/progress';
+@import './components/btn';
+@import './components/modal';
+@import './components/input';
+@import './components/shop';
+@import './components/list';
 
 // pages
 @import './pages/home';
 @import './pages/page-class';
+@import './pages/account';
+@import './pages/search';
+@import './pages/signup';
+@import './pages/roadmap';
