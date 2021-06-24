@@ -223,9 +223,10 @@
       background-color: var(--black-out);
       font-size: 24px;
       &.fullWidth {
-        width: calc(100% + var(--bs-gutter-x) - 1px);
+        width: calc(100% + var(--bs-gutter-x));
         justify-content: flex-start;
         padding-left: calc(44px + 8px);
+        border-right: 1px solid rgba(var(--RGB-bg0), 0.25);
       }
     }
     &-rowHeader {
