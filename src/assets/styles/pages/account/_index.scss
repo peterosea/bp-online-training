@@ -25,7 +25,10 @@
   .review.empty {
     @import './empty';
   }
-  .review.edit {
+  .review.write {
+    @import './write';
+  }
+  &-edit {
     @import './edit';
   }
 }
