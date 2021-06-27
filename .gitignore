@@ -1,6 +1,7 @@
 node_modules
 dist/
 ignore-*
-zeplin/
+media/
 .env
 .DS_Store
+*.tar
