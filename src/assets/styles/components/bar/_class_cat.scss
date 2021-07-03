@@ -92,7 +92,7 @@
 }
 
 @mixin bar-class-small {
-  & + main {
+  & + main.class.cat {
     --barPageheaderHight: 56px;
   }
   .bar-bg {

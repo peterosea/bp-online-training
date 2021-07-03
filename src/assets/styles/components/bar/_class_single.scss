@@ -61,7 +61,7 @@
 }
 
 @mixin bar-class-single-small {
-  & + main {
+  & + main.class.single {
     --barPageheaderHight: 56px;
   }
   .bar-classSingle {
