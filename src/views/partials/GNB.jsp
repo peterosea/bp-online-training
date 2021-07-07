@@ -38,7 +38,7 @@
           <a class="gnb-menu-item" href="">Building STORE</a>
         </li>
       </ul>
-      <div class="gnb-menu-btn btn-menu menu cross" id="overmenu-btn" data-bs-toggle="modal" data-bs-target="#overmenuModal">
+      <div class="gnb-menu-btn btn-menu menu cross d-block d-xl-none" id="overmenu-btn" data-bs-toggle="modal" data-bs-target="#overmenuModal">
         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <circle cx="50" cy="50" r="30" />
           <path class="line--1" d="M0 40h62c13 0 6 28-4 18L35 35" />
