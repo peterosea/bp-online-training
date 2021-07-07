@@ -2,7 +2,7 @@
 <div class="fnb">
   <div class="container fnb-container">
     <div class="row">
-      <div class="col-12 col-xl-6 py-3">
+      <div class="col-12 col-xl-6 py-3 fnb-info">
         <ul class="fnb-list-logo">
           <li>
             <img src="<%=zeplin%>/logo-40-point.png" srcset="<%=zeplin%>/logo-40-point@2x.png 2x, <%=zeplin%>/logo-40-point@3x.png 3x" alt="">
@@ -32,7 +32,7 @@
           COPYLIGHTⓒ BUILDINGPOINT  ALL RIGHT RESERVED
         </div>
       </div>
-      <div class="col-12 col-xl-6">
+      <div class="col-12 col-xl-6 fnb-menu">
         <div class="fnb-list-pagenav-wrap">
           <ul class="fnb-list-pagenav py-3">
             <li class="fnb-list-pagenav-title">

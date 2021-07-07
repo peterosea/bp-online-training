@@ -10,13 +10,13 @@
   background-color: var(--fnb-bg);
   color: var(--fnb-color);
 
-  @include media-breakpoint-down(sm) {
-    text-align: center;
-  }
-
   &-container {
-    padding-top: 34px;
-    padding-bottom: 34px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @include media-breakpoint-up(sm) {
+      padding-top: 34px;
+      padding-bottom: 34px;
+    }
     > .row > [class*='col'] {
       display: flex;
       flex-direction: column;
@@ -27,12 +27,7 @@
     &-logo {
       @include reset-list;
       display: flex;
-      flex-wrap: wrap;
       align-items: flex-end;
-
-      @include media-breakpoint-down(sm) {
-        justify-content: center;
-      }
 
       @supports (gap: 40px) {
         column-gap: 40px;
@@ -47,6 +42,15 @@
           margin-right: 40px;
         }
       }
+
+      @include media-breakpoint-down(sm) {
+        justify-content: center;
+        margin-bottom: calc(24px - 1rem);
+        img {
+          max-height: 32px;
+        }
+        @include gap(20px);
+      }
     }
 
     &-info {
@@ -56,10 +60,6 @@
       font-size: 13px;
       position: relative;
       margin-bottom: 20px;
-
-      @include media-breakpoint-down(sm) {
-        justify-content: center;
-      }
 
       @supports (gap: 8px) {
         column-gap: 8px;
@@ -122,9 +122,6 @@
         @supports (gap: 60px) {
           column-gap: 60px;
         }
-        @include media-breakpoint-down(sm) {
-          justify-content: center;
-        }
         @include media-breakpoint-up(xl) {
           justify-content: space-between;
           column-gap: 0;
@@ -152,6 +149,17 @@
         padding-top: 10px;
         color: var(--text2);
       }
+    }
+  }
+  &-copylight {
+    @include media-breakpoint-down(sm) {
+      font-size: 12px;
+    }
+  }
+  &-menu {
+    @include media-breakpoint-down(sm) {
+      order: -1;
+      margin-bottom: 4px;
     }
   }
 }
