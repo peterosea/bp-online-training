@@ -175,6 +175,11 @@
       align-items: center;
       position: relative;
       @include gap(24px);
+      .icon-wrap {
+        @include media-breakpoint-down(sm) {
+          @include gap(1px);
+        }
+      }
       > * {
         position: relative;
       }

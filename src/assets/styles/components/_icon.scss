@@ -12,7 +12,7 @@ $iconSize: "[class*='icon']:not(.icon-label):not(.icon-wrap)";
   &-wrap {
     display: flex;
     align-items: center;
-    --gap: 1px;
+    --gap: 4px;
     @include media-breakpoint-up(sm) {
       --gap: 8px;
     }
