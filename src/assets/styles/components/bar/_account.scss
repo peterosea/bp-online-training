@@ -1,45 +1,75 @@
 &-account {
   background-color: var(--ice-fishing);
+  overflow: hidden;
 
   &-infoCol {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    @include media-breakpoint-up(sm) {
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
     &.left {
-      padding-right: 52px;
-      border-right: 1px solid var(--common-feldspar);
+      border-bottom: 1px solid var(--common-feldspar);
+      padding-bottom: 28px;
+      padding-top: 32px;
+      @include media-breakpoint-up(sm) {
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 52px;
+        border: none;
+        border-right: 1px solid var(--common-feldspar);
+      }
     }
     &.right {
-      padding-left: 52px;
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
-
-      --gap: 32px;
-      @supports (gap: var(--gap)) {
-        gap: var(--gap);
-      }
-      @supports not (gap: var(--gap)) {
-        > *:not(:last-child) {
-          margin-right: var(--gap);
-        }
+      @include gap(24px);
+      padding-top: 28px;
+      padding-bottom: 32px;
+      justify-content: center;
+      @include media-breakpoint-up(sm) {
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 52px;
+        @include gap(32px);
+        flex-wrap: nowrap;
+        justify-content: flex-start;
       }
 
       .icon-wrap {
-        font-size: 22px;
+        font-size: 18px;
+        font-weight: bold;
+        @include media-breakpoint-up(sm) {
+          font-size: 22px;
+        }
 
         #{$iconSize} {
-          font-size: 32px;
+          font-size: 28px;
+          @include media-breakpoint-up(sm) {
+            font-size: 32px;
+          }
         }
       }
     }
   }
   .education {
     &-status {
+      @include media-breakpoint-down(sm) {
+        display: flex;
+        justify-content: space-between;
+      }
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+      }
       &-label {
         color: var(--blue-ruin);
-        font-size: 2rem;
         text-decoration: none;
         display: flex;
         align-items: center;
+        font-size: 18px;
+        @include media-breakpoint-up(sm) {
+          font-size: 2rem;
+        }
         &:after {
           content: '';
           display: block;
@@ -79,8 +109,17 @@
       }
     }
   }
+  .tab {
+    @include media-breakpoint-down(sm) {
+      width: calc(100vw + 2px);
+      transform: translateX(calc(var(--bs-gutter-x) * -1));
+    }
+  }
   .tab-item {
-    font-size: 24px;
-    padding: 1.5rem;
+    padding: 17px;
+    @include media-breakpoint-up(sm) {
+      padding: 1.5rem;
+      font-size: 24px;
+    }
   }
 }

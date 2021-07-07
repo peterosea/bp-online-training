@@ -49,8 +49,6 @@
   }
   &-user {
     display: flex;
-    flex-wrap: wrap;
-
     @include gap(24px);
 
     &-header {
@@ -75,10 +73,14 @@
       }
       .imgWrap {
         border-radius: 999px;
-        width: 140px;
-        height: 140px;
+        width: 104px;
+        height: 104px;
         overflow: hidden;
         position: relative;
+        @include media-breakpoint-up(sm) {
+          width: 140px;
+          height: 140px;
+        }
         img {
           width: 100%;
         }
@@ -102,13 +104,19 @@
     }
     &-name {
       color: var(--text1);
-      font-size: 2.28rem;
       line-height: 1.4;
+      font-size: 22px;
+      @include media-breakpoint-up(sm) {
+        font-size: 2.28rem;
+      }
     }
     &-email {
       margin-bottom: 12px;
       color: var(--text4);
-      font-size: 1.28rem;
+      font-size: 11px;
+      @include media-breakpoint-up(sm) {
+        font-size: 1.28rem;
+      }
     }
     &-edit {
       .btn {
