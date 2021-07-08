@@ -9,7 +9,7 @@
   <div class="section s1">
     <div class="container s1-container">
       <div class="row s1-row">
-        <div class="col s1-col-left class-goal">
+        <div class="col-12 col-md s1-col-left class-goal">
           <div class="s1-col-header">
             <div class="s1-col-header-wrap">
               <h2 class="class-title-1">
@@ -46,7 +46,7 @@
                 </li>
                 <li class="class-goal-info-item">
                   <div class="icon-wrap">
-                    <div class="icon-star"></div>
+                    <div class="icon-star line"></div>
                     <div class="icon-label">강의레벨</div>
                   </div>
                   <span>
@@ -71,7 +71,7 @@
             </div>
           </div>
         </div>
-        <div class="col s1-col-right">
+        <div class="col-12 col-md s1-col-right">
           <div class="s1-col-header">
             <div class="s1-col-header-wrap">
               <h2 class="class-title-1">

@@ -21,31 +21,46 @@
     @import './single';
   }
   // style
-  font-size: 1.125rem;
+  font-size: 1rem;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 1.125rem;
+  }
   .section {
     margin-top: 80px;
     margin-bottom: 80px;
   }
   &-title-1 {
-    font-size: 36px;
+    font-size: 24px;
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 8px;
     color: var(--text1);
+
+    @include media-breakpoint-up(sm) {
+      font-size: 36px;
+    }
     + p {
       margin-bottom: 0;
     }
   }
   &-goal {
     &-thumb {
-      margin-bottom: 32px;
+      margin-bottom: 24px;
+      @include media-breakpoint-up(sm) {
+        margin-bottom: 32px;
+      }
       img {
         max-width: 100%;
       }
     }
     &-info {
       @include reset-list;
-      margin-bottom: 40px;
+      margin-bottom: 32px;
+
+      @include media-breakpoint-up(sm) {
+        margin-bottom: 40px;
+      }
 
       #{$iconSize} {
         font-size: 32px;
@@ -70,13 +85,18 @@
         align-items: center;
         padding-left: 4px;
 
-        @supports (gap: 28px) {
-          gap: 28px;
+        flex-wrap: wrap;
+        @include gap(12px, y);
+
+        @include media-breakpoint-up(sm) {
+          flex-wrap: nowrap;
+          @include gap(28px, x);
         }
-        @supports not (gap: 20px) {
-          > *:not(:last-child) {
-            margin-right: 20px;
-          }
+
+        .icon-wrap {
+          min-width: 100px;
+          --gap: 8px;
+          color: var(--text1);
         }
       }
     }
@@ -94,10 +114,16 @@
       }
 
       #{$iconSize} {
-        font-size: 32px;
+        font-size: 24px;
+        @include media-breakpoint-up(sm) {
+          font-size: 32px;
+        }
       }
       .icon-label {
-        font-size: 20px;
+        font-size: 14px;
+        @include media-breakpoint-up(sm) {
+          font-size: 20px;
+        }
       }
 
       .btn {
@@ -123,7 +149,10 @@
     @include accordion.style1;
   }
   &-review {
-    font-size: 18px;
+    font-size: 15px;
+    @include media-breakpoint-up(sm) {
+      font-size: 18px;
+    }
 
     &-item {
       padding-bottom: 32px;

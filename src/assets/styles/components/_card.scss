@@ -1,9 +1,12 @@
 .card {
   &-review {
-    padding: 2.45em;
+    padding: 32px 20px;
     color: var(--text3);
     border: 1px solid var(--steam);
 
+    @include media-breakpoint-up(sm) {
+      padding: 2.45em;
+    }
     &-header {
       display: flex;
       align-items: center;
@@ -34,16 +37,25 @@
     }
     &-name {
       color: var(--text1);
+      font-size: 1.2em;
+      font-weight: bold;
     }
     &-date {
       color: var(--text4);
       font-size: 0.88em;
     }
     &-body {
-      height: 6em;
       overflow: hidden;
       > *:last-child {
         margin-bottom: 0;
+      }
+      @include media-breakpoint-up(sm) {
+        height: 6em;
+      }
+      br {
+        @include media-breakpoint-down(sm) {
+          display: none;
+        }
       }
     }
   }
