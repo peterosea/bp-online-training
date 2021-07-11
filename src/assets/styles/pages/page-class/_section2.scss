@@ -1,8 +1,14 @@
-// root css target
-// .class .s2-{}
+& {
+  @include media-breakpoint-down(sm) {
+    margin-top: 0;
+  }
+}
 
 &-col-header {
   border-top: 1px solid var(--black-out);
-  padding-top: 80px;
   margin-bottom: 18px;
+  padding-top: 54px;
+  @include media-breakpoint-up(sm) {
+    padding-top: 80px;
+  }
 }

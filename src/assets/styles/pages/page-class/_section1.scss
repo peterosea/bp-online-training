@@ -1,3 +1,9 @@
+& {
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 0;
+  }
+}
+
 &-row {
   --bs-gutter-x: 60px;
 }
