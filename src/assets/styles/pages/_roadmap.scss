@@ -18,8 +18,11 @@ svg.simple-flow-line {
     }
   }
   &-left {
-    display: flex;
-    flex-direction: column;
+    display: none;
+    @include media-breakpoint-up(sm) {
+      display: flex;
+      flex-direction: column;
+    }
   }
   &-row {
     justify-content: center;

@@ -223,8 +223,12 @@
   }
   &-roadmap {
     &-wrap {
-      --cardHeight: 160px;
-      --space: 100px;
+      --cardHeight: 120px;
+      --space: 40px;
+      @include media-breakpoint-up(sm) {
+        --cardHeight: 160px;
+        --space: 100px;
+      }
     }
     background-color: var(--bg0);
     height: var(--cardHeight);
@@ -232,7 +236,6 @@
     display: table;
     margin-bottom: var(--space);
     border: solid 1px var(--dhusar-grey);
-    font-size: 18px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -240,6 +243,15 @@
     color: var(--text1);
     transition: background-color 0.3s, color 0.3s;
     text-decoration: none;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    word-break: keep-all;
+    @include media-breakpoint-up(sm) {
+      font-size: 18px;
+      text-align: left;
+    }
 
     &:hover {
       border-color: var(--blue-ruin);
@@ -247,7 +259,9 @@
       color: var(--invert-text0);
     }
     b {
-      font-size: 1.1em;
+      @include media-breakpoint-up(sm) {
+        font-size: 1.1em;
+      }
     }
     &-header {
       height: 72px;
@@ -270,11 +284,14 @@
       height: var(--cardHeight);
       background-color: var(--theatre-blue);
       border-left: 8px solid var(--blue-ruin);
-      padding: 28px 44px;
       margin-bottom: var(--space);
       color: var(--invert-text0);
       display: flex;
       flex-direction: column;
+      padding: 24px 28px;
+      @include media-breakpoint-up(sm) {
+        padding: 28px 44px;
+      }
       span {
         opacity: 0.5;
         margin-bottom: 8px;
@@ -283,8 +300,17 @@
         font-size: 24px;
         line-height: 1.2;
       }
+      br {
+        display: none;
+        @include media-breakpoint-up(sm) {
+          display: block;
+        }
+      }
       &.row2 {
-        height: calc(var(--cardHeight) * 2 + var(--space));
+        height: auto;
+        @include media-breakpoint-up(sm) {
+          height: calc(var(--cardHeight) * 2 + var(--space));
+        }
       }
     }
   }
