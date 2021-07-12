@@ -37,8 +37,12 @@
     box-shadow: none;
     outline: none;
     color: var(--invert-text0);
+    height: 20px;
+
     svg {
       fill: currentColor;
+      width: auto;
+      height: 100%;
     }
     .bell {
       opacity: 0;
