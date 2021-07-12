@@ -1,0 +1,49 @@
+&-account {
+  svg {
+    fill: #615b5f;
+  }
+
+  // 로그인되지 않았을때 서브메뉴 스타일
+  .dropdown-menu {
+    padding: 0;
+  }
+  .dropdown-menu > li {
+    margin-bottom: 0;
+    margin-top: 0;
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--super-silver);
+    }
+    > .dropdown-item {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  .card-user {
+    padding: 16px 24px;
+    --gap: 8px;
+    &-thumbnail {
+      .imgWrap {
+        width: 40px;
+        height: 40px;
+      }
+      &:after {
+        content: none;
+      }
+    }
+    &-name {
+      font-size: 16px;
+    }
+    &-edit a {
+      color: var(--text4);
+    }
+  }
+  .gnb-submenu-list {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    .dropdown-item:hover {
+      background-color: transparent;
+    }
+  }
+}

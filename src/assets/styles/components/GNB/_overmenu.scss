@@ -1,0 +1,89 @@
+@use '../accordion';
+
+& {
+  width: 100vw;
+  max-height: 100vh;
+  border-radius: 0;
+  border: none;
+}
+
+&-modal {
+  margin-top: var(--barHeight);
+  max-height: calc(100vh - var(--barHeight));
+  padding: 0 !important;
+  &-dialog {
+    margin: 0;
+    max-width: 100%;
+  }
+  // custom backdrop
+  @at-root {
+    body.modal-open .modal-backdrop {
+      margin-top: var(--barHeight);
+      max-height: calc(100vh - var(--barHeight));
+    }
+  }
+}
+
+// menu
+@include accordion.CoverMenu;
+@include accordion.modal;
+.accordion {
+  &-header {
+    &-title {
+      font-size: 1.14rem;
+      font-weight: normal;
+    }
+  }
+  &-button {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: var(--bs-gutter-x);
+    padding-right: var(--bs-gutter-x);
+    &:not(.collapsed) {
+      box-shadow: inset 0 -1px 0 var(--super-silver);
+    }
+  }
+  &-item {
+    border-left: 0;
+    border-right: 0;
+    &:first-child {
+      border-radius: 0;
+    }
+    &:last-child {
+      border-bottom: 1px solid var(--super-silver);
+      border-radius: 0;
+    }
+  }
+  &-body {
+    padding: 0;
+    ul {
+      @include reset-list;
+      background-color: var(--zhen-zhu-bai-pearl);
+      .list-item {
+        color: var(--text1);
+      }
+      ul {
+        background-color: var(--bleached-silk);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .list-item {
+          color: var(--text3);
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+    > ul > li > .list-item {
+      border-bottom: 1px solid var(--super-silver);
+    }
+    .list-item {
+      padding: 15px var(--bs-gutter-x);
+      display: block;
+      text-decoration: none;
+      &.current,
+      &:hover {
+        color: var(--blue-ruin);
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+&-noti {
+  svg {
+    fill: #615b5f;
+  }
+  button {
+    .bell {
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    &.on .bell {
+      opacity: 1;
+    }
+  }
+  .noti {
+    &-submenu {
+      padding: 0;
+    }
+    &-item {
+      padding: 16px 24px;
+      margin: 0;
+      &:not(:last-child) {
+        border-bottom: 1px solid var(--super-silver);
+      }
+    }
+    &-header {
+      font-size: 16px;
+      color: var(--text1);
+      margin-bottom: 8px;
+    }
+    &-content {
+      color: var(--text3);
+      a {
+        color: var(--blue-ruin);
+      }
+      .history,
+      b {
+        color: var(--text0);
+      }
+    }
+  }
+}

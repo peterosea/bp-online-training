@@ -1,0 +1,26 @@
+& {
+  @include reset-list;
+  display: flex;
+}
+
+&-item {
+  padding: 0.25rem 20px;
+  position: relative;
+  &:first-child {
+    padding-left: 0;
+  }
+  &:last-child {
+    padding-right: 0;
+  }
+  &:not(:last-child):after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 24px;
+    width: 1px;
+    right: 0;
+    top: 50%;
+    background-color: var(--very-linght-pink, #ddd);
+    transform: translate(50%, -50%);
+  }
+}

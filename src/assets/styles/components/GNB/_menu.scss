@@ -1,0 +1,30 @@
+& {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+> li:not(:last-child) {
+  margin-right: 20px;
+}
+&-item {
+  text-decoration: none;
+  font-size: 1.125rem;
+  padding: calc(0.25rem + 1px) 0.5rem 0.25rem;
+  color: var(--text0, #000);
+}
+&-btn {
+  --x: calc(var(--barGnbHeight) / 3);
+  font-size: var(--barGnbHeight);
+  transform: translate(calc(-1 * var(--x)), -50%);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  @include media-breakpoint-down(sm) {
+    svg {
+      transform: scale(1.5);
+    }
+  }
+}
