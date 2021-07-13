@@ -1,6 +1,6 @@
 @at-root {
   :root {
-    --barGnbHeight: 60px;
+    --barGnbHeight: 52px;
     @include media-breakpoint-up(sm) {
       --barGnbHeight: 85px;
     }
@@ -58,5 +58,9 @@
   // 모바일에서 전체 영역 메뉴
   &-overmenu {
     @import 'overmenu';
+  }
+
+  &-pageheader {
+    @import 'pageheader';
   }
 }
