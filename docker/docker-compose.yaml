@@ -12,7 +12,7 @@ services:
     image: tomcat:latest
     container_name: WS__${PROJECT_NAME}
     volumes:
-      - ./src:/usr/local/tomcat/webapps/ROOT
+      - ../src:/usr/local/tomcat/webapps/ROOT
     labels:
       - traefik.enable=true
       - traefik.http.routers.work-202106__${PROJECT_NAME}.entrypoints=websecure
