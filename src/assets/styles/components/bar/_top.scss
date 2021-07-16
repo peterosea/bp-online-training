@@ -29,6 +29,7 @@
 
     & + main {
       --barTopHeight: 0px;
+      --barHeight: calc(var(--barGnbHeight) + var(--barTopHeight));
     }
   }
   &-noti {

@@ -1,56 +1,87 @@
 .s1 {
+  @include media-breakpoint-down(sm) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  &-container {
+    @include media-breakpoint-down(sm) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
   &-header {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 2px solid var(--black-out);
-    padding-bottom: 18px;
-    margin-bottom: 40px;
+    @include media-breakpoint-up(sm) {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 18px;
+      margin-bottom: 40px;
+      border-bottom: 2px solid var(--black-out);
+    }
 
     a {
       text-decoration: none;
       color: currentColor;
+      @include media-breakpoint-down(sm) {
+        padding: 15px 31px;
+        border-bottom: 1px solid var(--steam);
+        color: var(--text1);
+        &:first-child {
+          border-top: 1px solid var(--steam);
+        }
+      }
     }
     &-left {
       display: flex;
+      flex-direction: column;
 
-      @supports (gap: 50px) {
-        gap: 50px;
-      }
-      @supports not (gap: 50px) {
-        > *:not(:last-child) {
-          margin-right: 50px;
+      @include media-breakpoint-up(sm) {
+        flex-direction: row;
+        @include gap(50px);
+        > *:not(:last-child):after {
+          content: '';
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          width: 1px;
+          height: 28px;
+          background-color: var(--dhusar-grey);
+          transform: translate(25px, -50%);
         }
       }
       > * {
         position: relative;
       }
-      > *:not(:last-child):after {
-        content: '';
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 50%;
-        width: 1px;
-        height: 28px;
-        background-color: var(--dhusar-grey);
-        transform: translate(25px, -50%);
-      }
       .icon-label {
         font-weight: bold;
       }
     }
+    &-right {
+      @include media-breakpoint-down(sm) {
+        display: flex;
+        flex-direction: column;
+        a {
+          border-top: none !important;
+        }
+      }
+    }
     #{$iconSize} {
       font-size: 28px;
+    }
+    .icon-wrap {
+      @include gap(8px);
     }
     .icon-label {
       font-size: 20px;
     }
   }
   &-content {
-    margin-top: 40px;
-    margin-bottom: 140px;
     padding-top: 56.4%;
     position: relative;
+    @include media-breakpoint-up(sm) {
+      margin-top: 40px;
+      margin-bottom: 140px;
+    }
     iframe {
       width: 100%;
       height: 100%;
