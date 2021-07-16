@@ -59,6 +59,7 @@
     @include gap(24px);
     @include media-breakpoint-up(md) {
       @include gap(28px);
+      overflow: visible;
     }
   }
   .nav-item {
