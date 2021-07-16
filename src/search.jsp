@@ -8,7 +8,7 @@
 <body class="search page-search">
 <main>
   <%@ include file="views/partials/bar-search.jsp" %>
-  <div class="section">
+  <div class="singleSection">
     <div class="container">
       <div class="search-list-body">
           <div class="search-list-header">
