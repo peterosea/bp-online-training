@@ -1,20 +1,29 @@
 .signup {
-  .section {
-    margin-top: 80px;
+  .singleSection {
+    overflow-x: hidden;
   }
   &-tab {
     margin-bottom: 60px;
+    @include media-breakpoint-down(sm) {
+      display: block;
+    }
     .btn {
-      font-size: 24px;
+      font-size: 18px;
       padding-top: 22px;
       padding-bottom: 21px;
+      @include media-breakpoint-up(sm) {
+        font-size: 24px;
+      }
     }
   }
   &-content {
     padding-top: 60px;
     border-top: 1px solid var(--black-out);
-    border-bottom: 1px solid var(--black-out);
     margin-bottom: 52px;
+
+    @include media-breakpoint-up(sm) {
+      border-bottom: 1px solid var(--black-out);
+    }
     .btn.tool {
       border: solid 1px var(--steam);
     }
@@ -23,14 +32,12 @@
       font-size: 18px;
       justify-content: center;
       align-items: flex-start;
+      @include media-breakpoint-down(sm) {
+        flex-direction: column;
+      }
       .unit {
         display: flex;
         align-items: center;
-      }
-      > span {
-        color: var(--text2);
-        padding-top: 15px;
-        font-weight: bold;
       }
       [required] + span:not([class]):after {
         content: '*';
@@ -38,6 +45,27 @@
         color: var(--blue-ruin);
         font-size: 1.2em;
         vertical-align: text-top;
+      }
+      .input-grid {
+        @include media-breakpoint-down(sm) {
+          flex-direction: column;
+        }
+      }
+      .email {
+        display: flex;
+        align-items: center;
+        input {
+          width: 100%;
+        }
+        @include gap(8px);
+        > span {
+          color: var(--text2);
+          padding-top: 15px;
+        }
+      }
+      .dropdown-wrap {
+        display: flex;
+        @include gap(8px);
       }
     }
 
@@ -48,11 +76,15 @@
     }
   }
   &-consent {
-    padding-top: 52px;
-    padding-bottom: 52px;
+    padding: 52px 20px;
     background-color: var(--whiteout);
     border-top: 1px solid var(--steam);
     margin-top: 61px;
+    @include media-breakpoint-down(sm) {
+      width: 100vw;
+      border-bottom: 1px solid var(--black-out);
+      transform: translateX(calc(var(--bs-gutter-x) * -1));
+    }
     &-list {
       @include reset-list;
       max-width: 780px;
