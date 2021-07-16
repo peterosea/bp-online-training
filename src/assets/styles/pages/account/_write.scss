@@ -1,6 +1,8 @@
 & {
   .container {
-    padding-bottom: 160px;
+    @include media-breakpoint-up(sm) {
+      padding-bottom: 160px;
+    }
   }
   .card {
     border-radius: 0;
@@ -20,6 +22,7 @@
       font-size: 18px;
       color: var(--text4);
       margin-bottom: 32px;
+      word-break: keep-all;
       > :last-child {
         margin-bottom: 0;
       }

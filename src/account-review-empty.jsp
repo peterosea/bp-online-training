@@ -7,7 +7,7 @@
 <body class="page-account account">
 <main>
   <%@ include file="views/partials/bar-account.jsp" %>
-  <div class="section review empty">
+  <div class="singleSection review empty">
     <div class="container">
       <div class="card">
         <h1 class="card-title">아직 작성된 후기가 없습니다.</h1>
