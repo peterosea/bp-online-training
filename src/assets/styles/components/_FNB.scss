@@ -59,7 +59,13 @@
       flex-wrap: wrap;
       font-size: 13px;
       position: relative;
-      margin-bottom: 20px;
+
+      @include media-breakpoint-down(sm) {
+        flex-direction: column;
+      }
+      @include media-breakpoint-up(sm) {
+        margin-bottom: 20px;
+      }
 
       li {
         margin-bottom: 7px;
@@ -85,7 +91,6 @@
       > li:not(:last-child) {
         position: relative;
         &:after {
-          content: '';
           display: block;
           position: absolute;
           background-color: var(--fnb-border);
@@ -94,6 +99,9 @@
           top: 50%;
           right: 0;
           transform: translate(100%, -50%);
+          @include media-breakpoint-up(sm) {
+            cotent: '';
+          }
         }
       }
     }
@@ -149,19 +157,24 @@
 
       &-title {
         font-size: 14px;
-        font-weight: bold;
-        font-weight: 600;
+        font-weight: 500;
         margin-bottom: 4px;
-        padding-top: 10px;
         color: var(--text2);
         width: 100%;
+        @include media-breakpoint-up(sm) {
+          padding-top: 10px;
+          font-weight: bold;
+        }
       }
 
       &-com {
         display: flex;
         flex-wrap: wrap;
         @include gap(12px);
-        row-gap: 7px;
+        row-gap: 7px !important;
+        li {
+          margin-bottom: 0 !important;
+        }
       }
     }
   }
