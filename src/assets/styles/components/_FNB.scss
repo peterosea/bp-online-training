@@ -57,13 +57,14 @@
       @include reset-list;
       display: flex;
       flex-wrap: wrap;
-      font-size: 13px;
+      font-size: 12px;
       position: relative;
 
       @include media-breakpoint-down(sm) {
         flex-direction: column;
       }
       @include media-breakpoint-up(sm) {
+        font-size: 13px;
         margin-bottom: 20px;
       }
 
