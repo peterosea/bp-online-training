@@ -7,7 +7,7 @@
 <body class="page-classSingle">
 <main class="class single">
   <div class="section s1">
-    <div class="container">
+    <div class="container s1-container">
       <div class="s1-header">
         <div class="s1-header-left">
           <a href="#">

@@ -1,21 +1,26 @@
 @at-root {
   :root {
-    --barTopHeight: 44px;
+    --barTopHeight: 52px;
+    @include media-breakpoint-up(sm) {
+      --barTopHeight: 44px;
+    }
   }
 }
 
 &-top {
   height: var(--barTopHeight);
   position: fixed;
-  z-index: 900;
+  z-index: 1040;
   width: 100%;
   top: 0;
   left: 0;
   background-color: var(--blue-ruin);
-  padding-top: 10px;
-  padding-bottom: 10px;
   [class*='logo'] svg {
     fill: #fff;
+    width: auto;
+    @include media-breakpoint-up(xs) {
+      height: 24px;
+    }
   }
   &:not(.headroom--top) {
     @include bar-pageheader-samll;
@@ -24,6 +29,50 @@
 
     & + main {
       --barTopHeight: 0px;
+      --barHeight: calc(var(--barGnbHeight) + var(--barTopHeight));
     }
+  }
+  &-noti {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    color: var(--invert-text0);
+    height: 24px;
+    line-height: 0;
+
+    svg {
+      fill: currentColor;
+      width: auto;
+      height: 100%;
+    }
+    .bell {
+      opacity: 0;
+      transition: opacity 0.3s;
+      stroke: var(--blue-ruin);
+    }
+    &.on .bell {
+      opacity: 1;
+    }
+  }
+  &-search {
+    font-size: 24px;
+  }
+
+  .bar-container-right {
+    display: flex;
+    align-items: center;
+    @include gap(12px, x);
+  }
+  .bar-container-left {
+    font-size: 24px;
+    color: var(--invert-text0);
+    svg {
+      transform: scale(3);
+    }
+  }
+  .logo-BC {
+    display: flex;
+    @include gap(16px, x);
   }
 }

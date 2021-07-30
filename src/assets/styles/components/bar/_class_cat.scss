@@ -1,6 +1,9 @@
 @at-root {
   .page-classCat {
-    --barPageheaderHight: 200px;
+    --barPageheaderHight: 220px;
+    @include media-breakpoint-up(sm) {
+      --barPageheaderHight: 200px;
+    }
   }
 }
 
@@ -12,9 +15,14 @@
     display: flex;
     justify-content: space-between;
     height: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
     overflow: hidden;
+    flex-wrap: wrap;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @include media-breakpoint-up(sm) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
 
     &-left {
       display: flex;
@@ -27,17 +35,30 @@
     }
   }
   &-title {
-    font-size: 48px;
+    font-size: 24px;
     margin: 0;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     font-weight: bold;
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 16px;
+    }
+    @include media-breakpoint-up(md) {
+      font-size: 36px;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 48px;
+    }
   }
   &-info {
     @include reset-list;
 
     display: flex;
-    font-size: 20px;
     opacity: 0.5;
+
+    font-size: 12px;
+    @include media-breakpoint-up(sm) {
+      font-size: 20px;
+    }
 
     @supports (gap: 12px) {
       column-gap: 12px;
@@ -72,16 +93,37 @@
   }
   // class container right
   &-btn {
-    padding: 28px 54px;
     color: var(--invert-text0);
-    font-size: 24px;
     border-radius: 0;
+    font-size: 16px;
+    padding: 12px 26px;
+    @include media-breakpoint-up(sm) {
+      font-size: 20px;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 24px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding: 28px 54px;
+    }
     &:hover {
       color: var(--invert-text0);
     }
     &.apply {
       background-color: var(--blue-ruin);
       font-weight: 600;
+      @include media-breakpoint-down(sm) {
+        font-weight: 500;
+        padding-top: 7px;
+        padding-bottom: 9px;
+        font-size: 16px;
+      }
+      @include media-breakpoint-up(sm) {
+        font-weight: 400;
+      }
+      @include media-breakpoint-up(lg) {
+        font-weight: bold;
+      }
     }
     &.review {
       display: none;
@@ -92,31 +134,58 @@
 }
 
 @mixin bar-class-small {
-  & + main {
-    --barPageheaderHight: 56px;
+  & + main.class.cat {
+    --barPageheaderHight: 80px;
+    @include media-breakpoint-up(sm) {
+      --barPageheaderHight: 56px;
+    }
   }
   .bar-bg {
-    display: none;
+    @include media-breakpoint-up(sm) {
+      display: none;
+    }
   }
   .bar-classCat {
-    --barPageheaderHight: 56px;
-    background-color: var(--theatre-blue);
+    --barPageheaderHight: 80px;
+    @include media-breakpoint-up(sm) {
+      --barPageheaderHight: 56px;
+      background-color: var(--theatre-blue);
+    }
 
     &-container {
       padding-top: 14px;
       padding-bottom: 14px;
+      flex-wrap: nowrap;
+      &-left {
+        margin-bottom: 0;
+      }
     }
     &-title {
       margin-bottom: 0;
-      font-size: 24px;
+      font-size: 16px;
+      font-weight: normal;
+      @include media-breakpoint-up(sm) {
+        font-size: 20px;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 24px;
+        font-weight: bold;
+      }
     }
     &-info {
       display: none;
     }
     &-btn {
-      font-size: 18px;
+      font-size: 13px;
+      white-space: nowrap;
+      padding: 10px 20px;
+      @include media-breakpoint-up(sm) {
+        font-size: 18px;
+      }
       &.review {
-        display: block;
+        @include media-breakpoint-up(sm) {
+          display: block;
+        }
       }
     }
   }

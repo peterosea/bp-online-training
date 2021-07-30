@@ -1,0 +1,66 @@
+@at-root {
+  :root {
+    --barGnbHeight: 52px;
+    @include media-breakpoint-up(sm) {
+      --barGnbHeight: 85px;
+    }
+  }
+}
+
+.gnb {
+  height: var(--barGnbHeight);
+  border-bottom: 1px solid rgba(var(--RGB-super-silver), 0.5);
+  &-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-left {
+      position: relative;
+      min-width: calc((var(--barGnbHeight) / 3) * 2);
+    }
+    &-right {
+      justify-self: flex-end;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+
+  // menu
+  &-menu {
+    @import 'menu';
+  }
+  // active item
+  .active {
+    color: var(--blue-ruin);
+  }
+
+  // GNB submenu
+  &-submenu {
+    @import 'submenu';
+  }
+
+  // search
+  &-search {
+    @import 'search';
+  }
+
+  // personal menu
+  &-personal {
+    @import 'personal';
+    @import 'account';
+    @import 'noti';
+  }
+
+  // over menu
+  // 모바일에서 전체 영역 메뉴
+  &-overmenu {
+    @import 'overmenu';
+  }
+
+  &-pageheader {
+    @import 'pageheader';
+  }
+}

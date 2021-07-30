@@ -35,18 +35,22 @@
             <label class="input-label left">
               <div required>
                 <div class="input-grid align-item mb-3">
-                  <input type="text" class="input-item" required>
-                  <span class="unit">@</span>
-                  <input type="text" class="input-item" required>
-                  <div class="dropdown">
-                    <button class="btn tool dropdown-toggle h-100 px-4" type="button" id="rootDomain" data-bs-toggle="dropdown" aria-expanded="false">
-                      naver.com
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="rootDomain">
-                      <li><a class="dropdown-item" href="javascript:">naver.com</a></li>
-                    </ul>
+                  <div class="email">
+                    <input type="text" class="input-item" required>
+                    <span class="unit">@</span>
+                    <input type="text" class="input-item" required>
                   </div>
-                  <button class="btn tool px-4 whiteout c-text3" type="button" style="white-space: nowrap">중복확인</button>
+                  <div class="dropdown-wrap">
+                    <div class="dropdown">
+                      <button class="btn tool dropdown-toggle h-100 px-4" type="button" id="rootDomain" data-bs-toggle="dropdown" aria-expanded="false">
+                        naver.com
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="rootDomain">
+                        <li><a class="dropdown-item" href="javascript:">naver.com</a></li>
+                      </ul>
+                    </div>
+                    <button class="btn tool px-4 whiteout c-text3" type="button" style="white-space: nowrap">중복확인</button>
+                  </div>
                 </div>
                 <label class="input-label">
                   <input type="checkbox" name="" required>

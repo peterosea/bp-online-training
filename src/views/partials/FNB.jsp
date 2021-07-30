@@ -2,7 +2,7 @@
 <div class="fnb">
   <div class="container fnb-container">
     <div class="row">
-      <div class="col-12 col-xl-6 py-3">
+      <div class="col-12 col-xl-6 py-3 fnb-info">
         <ul class="fnb-list-logo">
           <li>
             <img src="<%=zeplin%>/logo-40-point.png" srcset="<%=zeplin%>/logo-40-point@2x.png 2x, <%=zeplin%>/logo-40-point@3x.png 3x" alt="">
@@ -32,9 +32,9 @@
           COPYLIGHTⓒ BUILDINGPOINT  ALL RIGHT RESERVED
         </div>
       </div>
-      <div class="col-12 col-xl-6">
+      <div class="col-12 col-xl-6 fnb-menu">
         <div class="fnb-list-pagenav-wrap">
-          <ul class="fnb-list-pagenav py-3">
+          <ul class="fnb-list-pagenav py-3 fnb-list-pagenav-com">
             <li class="fnb-list-pagenav-title">
               회사
             </li>
@@ -55,14 +55,14 @@
             </li>
           </ul>
           <ul class="fnb-list-pagenav py-3">
-            <li class="fnb-list-pagenav-title">
+            <li class="fnb-list-pagenav-title mb-2 pb-1">
               고객지원
             </li>
             <li>
               상품 및 기타 문의 시
             </li>
             <li>
-              <a href="tel:02-711-7530">02-711-7530</a>  |  <a href="mailto:support@buildingpoint.co.kr">support@buildingpoint.co.kr</a>
+              <a href="tel:02-711-7530">02-711-7530</a> | <a href="mailto:support@buildingpoint.co.kr">support@buildingpoint.co.kr</a>
             </li>
             <li>
               오전 10시 ~ 오후 5시까지 운영

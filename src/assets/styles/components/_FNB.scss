@@ -10,13 +10,13 @@
   background-color: var(--fnb-bg);
   color: var(--fnb-color);
 
-  @include media-breakpoint-down(sm) {
-    text-align: center;
-  }
-
   &-container {
-    padding-top: 34px;
-    padding-bottom: 34px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @include media-breakpoint-up(sm) {
+      padding-top: 34px;
+      padding-bottom: 34px;
+    }
     > .row > [class*='col'] {
       display: flex;
       flex-direction: column;
@@ -27,12 +27,8 @@
     &-logo {
       @include reset-list;
       display: flex;
-      flex-wrap: wrap;
       align-items: flex-end;
-
-      @include media-breakpoint-down(sm) {
-        justify-content: center;
-      }
+      flex-wrap: wrap;
 
       @supports (gap: 40px) {
         column-gap: 40px;
@@ -47,20 +43,34 @@
           margin-right: 40px;
         }
       }
+
+      @include media-breakpoint-down(sm) {
+        margin-bottom: calc(24px - 1rem);
+        img {
+          max-height: 32px;
+        }
+        @include gap(20px);
+      }
     }
 
     &-info {
       @include reset-list;
       display: flex;
       flex-wrap: wrap;
-      font-size: 13px;
+      font-size: 12px;
       position: relative;
-      margin-bottom: 20px;
 
       @include media-breakpoint-down(sm) {
-        justify-content: center;
+        flex-direction: column;
+      }
+      @include media-breakpoint-up(sm) {
+        font-size: 13px;
+        margin-bottom: 20px;
       }
 
+      li {
+        margin-bottom: 7px;
+      }
       @supports (gap: 8px) {
         column-gap: 8px;
         > li:not(:last-child) {
@@ -82,7 +92,6 @@
       > li:not(:last-child) {
         position: relative;
         &:after {
-          content: '';
           display: block;
           position: absolute;
           background-color: var(--fnb-border);
@@ -91,6 +100,9 @@
           top: 50%;
           right: 0;
           transform: translate(100%, -50%);
+          @include media-breakpoint-up(sm) {
+            cotent: '';
+          }
         }
       }
     }
@@ -99,6 +111,10 @@
       @include reset-list;
 
       --px: 36px;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 12px;
+      }
 
       @include media-breakpoint-up(xl) {
         padding-left: var(--px);
@@ -122,9 +138,6 @@
         @supports (gap: 60px) {
           column-gap: 60px;
         }
-        @include media-breakpoint-down(sm) {
-          justify-content: center;
-        }
         @include media-breakpoint-up(xl) {
           justify-content: space-between;
           column-gap: 0;
@@ -145,13 +158,36 @@
 
       &-title {
         font-size: 14px;
-        font-weight: bold;
-        font-family: AppleSDGothicNeo;
-        font-weight: 600;
-        margin-bottom: 16px;
-        padding-top: 10px;
+        font-weight: 500;
+        margin-bottom: 4px;
         color: var(--text2);
+        width: 100%;
+        @include media-breakpoint-up(sm) {
+          padding-top: 10px;
+          font-weight: bold;
+        }
       }
+
+      &-com {
+        display: flex;
+        flex-wrap: wrap;
+        @include gap(12px);
+        row-gap: 7px !important;
+        li {
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+  }
+  &-copylight {
+    @include media-breakpoint-down(sm) {
+      font-size: 12px;
+    }
+  }
+  &-menu {
+    @include media-breakpoint-down(sm) {
+      order: -1;
+      margin-bottom: 4px;
     }
   }
 }

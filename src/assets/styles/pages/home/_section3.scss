@@ -6,17 +6,31 @@
   max-width: 370px;
   @include title;
   color: var(--text1);
+  line-height: 1.4;
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 28px;
+  }
 }
 
 &-levels {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   position: relative;
 
+  justify-content: flex-start;
+  @include media-breakpoint-up(md) {
+    justify-content: flex-end;
+  }
+
+  &:after,
+  &:before {
+    display: none;
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
+  }
   &:after {
     content: '';
-    display: block;
     width: calc(100% + 100vw);
     background-color: var(--cerebral-grey);
     position: absolute;
@@ -28,7 +42,6 @@
   }
   &::before {
     content: '';
-    display: block;
     width: 10px;
     height: 10px;
     background-color: var(--azure);
@@ -41,8 +54,17 @@
     box-shadow: 0 0 0 2px var(--blue-hijab) inset;
   }
   .nav {
-    @include gap(28px);
     z-index: 2;
+    overflow: hidden;
+    position: relative;
+    @include gap(8px);
+    @include media-breakpoint-up(sm) {
+      @include gap(24px);
+    }
+    @include media-breakpoint-up(md) {
+      @include gap(28px);
+      overflow: visible;
+    }
   }
   .nav-item {
     position: relative;
@@ -51,8 +73,8 @@
     display: none;
   }
   .nav-link {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     padding: 0;
     border-radius: 999px;
     background-color: var(--cold-morning);
@@ -61,6 +83,11 @@
     justify-content: center;
     position: relative;
     @include gap(2px);
+
+    @include media-breakpoint-up(sm) {
+      width: 48px;
+      height: 48px;
+    }
 
     &.active + .link-tooltip {
       position: absolute;
@@ -73,9 +100,13 @@
       bottom: 100%;
       left: 50%;
       transform: translateX(-50%);
-      display: flex;
       align-items: center;
       justify-content: center;
+
+      display: none;
+      @include media-breakpoint-up(md) {
+        display: flex;
+      }
       &:after {
         width: 0;
         height: 0;
@@ -91,7 +122,10 @@
     }
 
     .icon-star {
-      font-size: 12px;
+      font-size: 8px;
+      @include media-breakpoint-up(sm) {
+        font-size: 12px;
+      }
     }
     .icon-star.active {
       display: none;
@@ -112,6 +146,14 @@
 &-product {
   margin-top: 60px;
   .card-product {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 60px;
+    }
+    @include media-breakpoint-down(sm) {
+      .icon-label {
+        margin-left: 4px;
+      }
+    }
   }
 }

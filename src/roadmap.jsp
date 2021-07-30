@@ -45,7 +45,7 @@
             </div>
           </div>
         </div>
-        <div class="col-9">
+        <div class="col-12 col-xl-9">
           <div class="row roadmap-row">
             <div class="col-12">
               <div class="card-roadmap-wrap">
@@ -55,8 +55,21 @@
               </div>
             </div>
           </div>
+          <div class="row roadmap-row d-block d-xl-none">
+            <div class="col-12">
+              <div class="card-roadmap-wrap">
+                <div id="object" class="card-roadmap-rowHeader row2">
+                  <span>SketchUp Pro</span>
+                  <b>
+                    Basic<br/>
+                    클래스
+                  </b>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="row roadmap-row">
-            <div class="col-4">
+            <div class="col-6 col-xl-4">
               <div class="card-roadmap-wrap">
                 <a href="#" id="object" class="card-roadmap" data-key-1 data-key-3>
                   <span>기초 과정</span>
@@ -64,7 +77,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-6 col-xl-4">
               <div class="card-roadmap-wrap">
                 <a href="#" id="object" class="card-roadmap" data-key-2 data-key-4>
                   <span>기초 과정</span>
@@ -74,12 +87,24 @@
             </div>
           </div>
           <div class="row roadmap-row">
-            <div class="col-4">
+            <div class="col-6 col-xl-4">
               <div class="card-roadmap-wrap">
                 <a href="#" id="object" class="card-roadmap" data-key-3 data-key-4 data-key-5 data-key-6 data-key-7>
                   <span>쉽게 따라하는</span>
                   <b>제품/가구 디자인</b>
                 </a>
+              </div>
+            </div>
+          </div>
+          <div class="row roadmap-row d-block d-xl-none">
+            <div class="col-12">
+              <div class="card-roadmap-wrap">
+                <div id="object" class="card-roadmap-rowHeader row2">
+                  <span>SketchUp Pro</span>
+                  <b>
+                    Intermediate 클래스
+                  </b>
+                </div>
               </div>
             </div>
           </div>
@@ -90,22 +115,11 @@
                   <b>건축설계 / 인테리어</b>
                 </a>
               </div>
-              <div class="card-roadmap-wrap">
-                <a href="#" id="object" class="card-roadmap" data-key-8>
-                  <b>한옥 모델링</b>
-                </a>
-              </div>
             </div>
             <div class="col-4">
               <div class="card-roadmap-wrap">
                 <a href="#" id="object" class="card-roadmap" data-key-6 data-key-9>
                   <b>건설 / 토목</b>
-                </a>
-              </div>
-              <div class="card-roadmap-wrap">
-                <a href="#" id="object" class="card-roadmap" data-key-9>
-                  <span>포인트클라우드 데이터</span>
-                  <b>활용하기</b>
                 </a>
               </div>
             </div>
@@ -116,6 +130,37 @@
                   <b>웹툰 배경 및 애니메이션</b>
                 </a>
               </div>
+            </div>
+          </div>
+          <div class="row roadmap-row d-block d-xl-none">
+            <div class="col-12">
+              <div class="card-roadmap-wrap">
+                <div id="object" class="card-roadmap-rowHeader row2">
+                  <span>SketchUp Pro</span>
+                  <b>
+                    Advanced 클래스
+                  </b>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row roadmap-row">
+            <div class="col-4">
+              <div class="card-roadmap-wrap">
+                <a href="#" id="object" class="card-roadmap" data-key-8>
+                  <b>한옥 모델링</b>
+                </a>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card-roadmap-wrap">
+                <a href="#" id="object" class="card-roadmap" data-key-9>
+                  <span>포인트클라우드 데이터</span>
+                  <b>활용하기</b>
+                </a>
+              </div>
+            </div>
+            <div class="col-4">
             </div>
           </div>
         </div>

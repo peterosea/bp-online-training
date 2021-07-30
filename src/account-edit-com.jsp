@@ -19,9 +19,8 @@
             </div>
           </div>
           <div class="row account-edit-table">
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
               <div class="card-profile">
-                <div class="card-profile-label">프로필 사진</div>
                 <div class="card-profile-img">
                   <div class="imgWrap">
                     <img src="https://picsum.photos/200" alt="">
@@ -33,7 +32,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-8">
+            <div class="col-12 col-lg-8">
               <div class="input-rootWrap">
                 <label class="input-label column">
                   <input id="" type="text" class="input-item" required readonly value="㈜ 빌딩포인트코리아">
@@ -127,8 +126,10 @@
             </div>
           </div>
           <div class="row account-edit-table-footer">
-            <button class="btn primary w-280">변경사항 저장</button><br/>
-            <a href="#" class="btn w-280">회원탈퇴</a>
+            <div class="col-12">
+              <button class="btn primary w-280">변경사항 저장</button><br/>
+              <a href="#" class="btn w-280">회원탈퇴</a>
+            </div>
           </div>
         </form>
       </div>

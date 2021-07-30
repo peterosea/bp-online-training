@@ -1,10 +1,23 @@
+& {
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 0;
+  }
+}
+
 &-row {
-  --bs-gutter-x: 60px;
+  --bs-gutter-x: 30px;
+  @include media-breakpoint-up(xl) {
+    --bs-gutter-x: 60px;
+  }
 }
 &-col {
   &-left {
     max-width: calc(520px + var(--bs-gutter-x));
     width: 100%;
+    margin-bottom: 60px;
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
+    }
   }
   &-right {
     &-content {
@@ -15,7 +28,10 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 32px;
+    }
     &-iconWrap {
       margin-bottom: 20px;
       #{$iconSize} {

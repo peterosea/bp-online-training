@@ -18,14 +18,24 @@ svg.simple-flow-line {
     }
   }
   &-left {
-    display: flex;
-    flex-direction: column;
+    display: none;
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      flex-direction: column;
+    }
   }
   &-row {
     justify-content: center;
     > [class*='col'] {
       display: flex;
       flex-direction: column;
+    }
+  }
+  [data-link='key-11'],
+  [data-link='key-10'] {
+    visibility: hidden;
+    @include media-breakpoint-up(xl) {
+      visibility: visible;
     }
   }
 }

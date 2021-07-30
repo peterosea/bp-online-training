@@ -1,7 +1,18 @@
 @import '~bootstrap/scss/bootstrap';
 
 .container {
-  @include media-breakpoint-up(xl) {
+  @include media-breakpoint-up(xxl) {
     max-width: 1261px;
+  }
+  &,
+  &-fluid,
+  &-xxl,
+  &-xl,
+  &-lg,
+  &-md,
+  &-sm {
+    @include media-breakpoint-down(lg) {
+      --bs-gutter-x: 20px;
+    }
   }
 }

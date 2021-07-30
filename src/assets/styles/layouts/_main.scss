@@ -1,12 +1,22 @@
+@at-root {
+  :root {
+    // GNB, bar-top margin
+    --barHeight: calc(var(--barGnbHeight) + var(--barTopHeight));
+  }
+}
+
 main {
-  // GNB, bar-top margin
-  --barHeight: calc(var(--barGnbHeight) + var(--barTopHeight));
   margin-top: var(--barHeight);
   padding-top: var(--barPageheaderHight, 0);
   transition: padding-top 0.3s ease-in-out, margin-top 0.3s ease-in-out;
 
   .singleSection {
-    margin-top: 80px;
-    margin-bottom: 140px;
+    padding-top: 28px;
+    margin-bottom: 60px;
+    @include media-breakpoint-up(sm) {
+      padding-top: 0;
+      margin-top: 80px;
+      margin-bottom: 140px;
+    }
   }
 }
