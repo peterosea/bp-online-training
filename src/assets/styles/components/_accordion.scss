@@ -296,11 +296,21 @@
       }
 
       &-thumbnail {
-        padding-top: 28.125%;
+        aspect-ratio: 16/9;
         position: relative;
         line-height: 0;
         font-size: 0;
         min-width: 132px;
+        overflow: hidden;
+        min-height: 140px;
+
+        @include media-breakpoint-up(sm) {
+          width: 100%;
+        }
+        @include media-breakpoint-up(lg) {
+          width: auto;
+        }
+
         img {
           position: absolute;
           top: 50%;
@@ -332,25 +342,6 @@
             font-size: 16px;
             padding: 0;
             padding-bottom: 2px;
-          }
-        }
-      }
-
-      &-thumbnail {
-        @include media-breakpoint-up(sm) {
-          width: 100%;
-        }
-        @include media-breakpoint-up(lg) {
-          width: auto;
-        }
-        img {
-          @include media-breakpoint-up(sm) {
-            height: auto;
-            width: 100%;
-          }
-          @include media-breakpoint-up(lg) {
-            width: auto;
-            height: 100px;
           }
         }
       }

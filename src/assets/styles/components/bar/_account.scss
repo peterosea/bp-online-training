@@ -50,7 +50,7 @@
 
       .icon-wrap {
         font-size: 18px;
-        font-weight: bold;
+        color: var(--text1);
         @include media-breakpoint-up(md) {
           font-size: 22px;
         }
@@ -80,6 +80,7 @@
         @include gap(4px);
         @include media-breakpoint-up(md) {
           font-size: 2rem;
+          white-space: nowrap;
         }
         &:after {
           content: '';
@@ -99,6 +100,9 @@
     }
     &-progress {
       display: flex;
+      @include media-breakpoint-up(lg) {
+        @include gap(24px);
+      }
     }
     &-due {
       .label {

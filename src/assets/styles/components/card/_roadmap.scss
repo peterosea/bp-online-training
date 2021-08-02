@@ -69,6 +69,9 @@
         background-color: rgba(var(--RGB-bg0), 0.25);
       }
     }
+    b {
+      font-weight: 500;
+    }
   }
   &-rowHeader {
     height: var(--cardHeight);
@@ -85,10 +88,14 @@
     span {
       opacity: 0.5;
       margin-bottom: 8px;
+      @include media-breakpoint-up(sm) {
+        font-size: 18px;
+      }
     }
     b {
-      line-height: 1.2;
+      line-height: 1.4;
       font-size: 18px;
+      font-weight: 500;
       @include media-breakpoint-up(sm) {
         font-size: 24px;
       }
