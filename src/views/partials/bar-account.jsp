@@ -34,7 +34,7 @@
             <span>23개의 클래스</span>
           </a>
         </div>
-        <div class="row w-100 justify-content-between justify-content-lg-center">
+        <div class="row w-100 justify-content-between justify-content-lg-around">
           <div class="col-auto px-0">
             <div class="education-progress">
               <%--

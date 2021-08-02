@@ -81,6 +81,12 @@
                 교육과정에 대해 화인해주세요
               </p>
             </div>
+            <div class="s1-col-header-iconWrap">
+              <div class="icon-wrap">
+                <div class="icon-qna"></div>
+                <div class="icon-label">QNA</div>
+              </div>
+            </div>
           </div>
           <div class="s1-col-content s1-col-right-content">
             <div class="class-accordion accordion accordion-flush" id="accordionFlushExample">

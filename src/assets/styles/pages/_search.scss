@@ -73,7 +73,7 @@
       flex-direction: column;
     }
     &-left + &-right {
-      justify-content: space-between;
+      justify-content: space-around;
     }
     &-thumbnail {
       @include media-breakpoint-up(sm) {

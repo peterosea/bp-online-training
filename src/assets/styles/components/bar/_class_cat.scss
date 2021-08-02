@@ -153,11 +153,13 @@
     }
 
     &-container {
-      padding-top: 14px;
-      padding-bottom: 14px;
+      padding-top: 0;
+      padding-bottom: 0;
       flex-wrap: nowrap;
       &-left {
         margin-bottom: 0;
+        padding-top: 14px;
+        padding-bottom: 14px;
       }
     }
     &-title {
@@ -179,12 +181,17 @@
       font-size: 13px;
       white-space: nowrap;
       padding: 10px 20px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
       @include media-breakpoint-up(sm) {
         font-size: 18px;
       }
       &.review {
         @include media-breakpoint-up(sm) {
-          display: block;
+          display: flex;
         }
       }
     }
