@@ -88,7 +88,7 @@
   <div class="section s1">
     <div class="container">
       <div class="row py-4 py-md-0">
-        <div class="col-4 col-sm-7 col-md-5 main">
+        <div class="col-4 col-sm-7 main">
           <h1 class="main-title">
             BuildingCampus<br/>
             <b>교육특징</b>
@@ -97,7 +97,7 @@
             <%@ include file="views/partials/home-s1-content.jsp" %>
           </div>
         </div>
-        <div class="col-8 col-sm-5 col-md-7">
+        <div class="col-8 col-sm-5">
           <img class="main-img" src="<%=zeplin%>/img-496-x-580.png" srcset="<%=zeplin%>/img-496-x-580@2x.png 2x, <%=zeplin%>/img-496-x-580@3x.png 3x">
         </div>
       </div>
