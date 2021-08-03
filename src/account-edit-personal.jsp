@@ -118,10 +118,8 @@
             </div>
           </div>
           <div class="row account-edit-table-footer">
-            <div class="col-12">
-              <button class="btn primary w-280">변경사항 저장</button><br/>
-              <a href="#" class="btn w-280">회원탈퇴</a>
-            </div>
+            <button class="btn primary w-280">변경사항 저장</button><br/>
+            <a href="#" class="btn w-280">회원탈퇴</a>
           </div>
         </form>
       </div>
