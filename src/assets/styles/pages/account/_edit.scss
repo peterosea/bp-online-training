@@ -91,6 +91,12 @@
     max-width: 620px;
     margin: auto;
   }
+  .input-item {
+    color: var(--text2);
+    &[readonly] {
+      padding-left: 0;
+    }
+  }
   .input-label {
     color: var(--text2);
     &:not(:last-child) {
@@ -106,7 +112,7 @@
         font-weight: bold;
       }
     }
-    [required] + :after {
+    [required]:not([readonly]) + :after {
       content: '*';
       margin-left: 8px;
       color: var(--blue-ruin);
