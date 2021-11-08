@@ -4,6 +4,12 @@
 [Keep a Changelog](https://keepachangelog.com/ko/1.0.0/)의 형식을 기본으로 구성됩니다.
 
 
+## [v1.0.3] 2021-11-08
+
+### Fixed
+
+- zeplin footer 디자인과 맞지 않는 부분 수정 (코드 한줄 누락)
+
 ## [WIP] v1.0.0 -- w4
 
 ### 2021-07-07

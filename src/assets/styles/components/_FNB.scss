@@ -176,6 +176,9 @@
         li {
           margin-bottom: 0 !important;
         }
+        @include media-breakpoint-up(xl) {
+          flex-direction: column;
+        }
       }
     }
   }
