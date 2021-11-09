@@ -104,6 +104,10 @@
           @include gap(28px, x);
         }
 
+        &.items-start {
+          align-items: flex-start;
+        }
+
         .icon-wrap {
           min-width: 100px;
           --gap: 8px;

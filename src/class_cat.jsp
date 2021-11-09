@@ -26,6 +26,17 @@
                 <img src="<%=zeplin%>/img-600-x-348.jpg" srcset="<%=zeplin%>/img-600-x-348@2x.jpg 2x, <%=zeplin%>/img-600-x-348@3x.jpg 3x">
               </div>
               <ul class="class-goal-info">
+                <li class="class-goal-info-item items-start">
+                  <div class="icon-wrap">
+                    <div class="icon-pencil"></div>
+                    <div class="icon-label">학습목표</div>
+                  </div>
+                  <span>
+                    스케치업 UI 및 화면 구성, 모델링 및 편집도구 사용법과 
+                    대화상자 및 메뉴바를 이해하고, 그룹/컴포넌트 등의 객체 
+                    요소에 대한 무료 클래스 입니다.
+                  </span>
+                </li>
                 <li class="class-goal-info-item">
                   <div class="icon-wrap">
                     <div class="icon-calendar"></div>
@@ -77,9 +88,6 @@
               <h2 class="class-title-1">
                 세부 교육과정
               </h2>
-              <p>
-                교육과정에 대해 화인해주세요
-              </p>
             </div>
             <div class="s1-col-header-iconWrap">
               <div class="icon-wrap">
