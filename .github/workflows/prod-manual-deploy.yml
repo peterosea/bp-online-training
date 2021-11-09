@@ -41,11 +41,10 @@ jobs:
         with:
           node-version: "16.x"
 
-      - name: 🔨 yarn install & build
+      - name: 🔨 npm install & build
         run: |
-          yarn set version berry
-          yarn install
-          yarn build
+          npm install
+          npm build
 
       - name: 📂 Sync files to Server
         uses: AEnterprise/rsync-deploy@v1.0
