@@ -9,7 +9,13 @@
             <span>스케치업 강좌</span>
           </button>
           <ul class="dropdown-menu gnb-submenu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item gnb-submenu-title-1" href="#">기본툴의 사용 (무료)</a></li>
+            <li>
+              <a class="dropdown-item gnb-submenu-title-1" href="#">기본툴의 사용 (무료)</a>
+              <ul class="gnb-submenu-list">
+                <li><a class="dropdown-item" href="#">SketchUp 기초강좌</a></li>
+                <li><a class="dropdown-item" href="#">LayOut 기초강좌</a></li>
+              </ul>
+            </li>
             <li>
               <div class="dropdown-item gnb-submenu-title-1">
                 분야별 강좌
