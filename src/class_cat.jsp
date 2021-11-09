@@ -10,16 +10,6 @@
     <div class="container s1-container">
       <div class="row s1-row">
         <div class="col-12 col-md s1-col-left class-goal">
-          <div class="s1-col-header">
-            <div class="s1-col-header-wrap">
-              <h2 class="class-title-1">
-                학습목표
-              </h2>
-              <p>
-                수강기간과 강의자료를 확인하세요
-              </p>
-            </div>
-          </div>
           <div class="s1-col-content">
             <div class="class-content">
               <div class="class-goal-thumb">
@@ -92,7 +82,7 @@
             <div class="s1-col-header-iconWrap">
               <div class="icon-wrap">
                 <div class="icon-qna"></div>
-                <div class="icon-label">QNA</div>
+                <div class="icon-label">Q&A</div>
               </div>
             </div>
           </div>
@@ -104,9 +94,6 @@
                     <div class="accordion-header-main">
                       <div class="accordion-header-title">
                         01 스케치업 툴바 소개
-                      </div>
-                      <div class="accordion-header-description">
-                        강좌 소개 내용강좌 소개 내용강좌 소개 내용강좌 소개 내용강좌 소개 내용 강좌 소개 내용강좌 소개 내용
                       </div>
                     </div>
                   </button>
@@ -166,9 +153,6 @@
                       <div class="accordion-header-title">
                         02 도형 만들기
                       </div>
-                      <div class="accordion-header-description">
-                        강좌 소개 내용강좌 소개 내용강좌 소개 내용강좌 소개 내용강좌 소개 내용 강좌 소개 내용강좌 소개 내용
-                      </div>
                     </div>
                   </button>
                 </h2>
@@ -226,9 +210,6 @@
                     <div class="accordion-header-main">
                       <div class="accordion-header-title">
                         03 모형 만들기
-                      </div>
-                      <div class="accordion-header-description">
-                        강좌 소개 내용강좌 소개 내용강좌 소개 내용강좌 소개 내용강좌 소개 내용 강좌 소개 내용강좌 소개 내용
                       </div>
                     </div>
                   </button>
