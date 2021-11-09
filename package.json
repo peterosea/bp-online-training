@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "webpack -d source-map -w -c config/webpack.config.js --mode development",
-    "build": "webpack -d source-map -w -c config/webpack.config.js --mode production"
+    "build": "webpack -d source-map -c config/webpack.config.js --mode production"
   },
   "devDependencies": {
     "buble-loader": "^0.5.1",
