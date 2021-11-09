@@ -4,7 +4,19 @@
 [Keep a Changelog](https://keepachangelog.com/ko/1.0.0/)의 형식을 기본으로 구성됩니다.
 
 
-## [v1.0.3] 2021-11-09
+## [v1.0.5] 2021-11-09
+
+### Changed
+
+- 클래스 상세 
+  - 학습목표 헤더 제거
+  - 상세과정 description 제거
+
+### Added
+
+- menu dropdown 기본툴 무료 sub menu 추가
+
+## [v1.0.4] 2021-11-09
 
 ### Added
 
