@@ -1,9 +1,7 @@
 name: 🙆‍♂️ 수동 static & build code deploy
 on:
   push:
-    branches: [develop, main]
-    tags:
-      - dev/*
+    branches: [develop]
     paths:
       - src/**/*
   workflow_dispatch:
@@ -44,7 +42,7 @@ jobs:
       - name: 🔨 npm install & build
         run: |
           npm install
-          npm build
+          npm run build
 
       - name: 📂 Sync files to Server
         uses: AEnterprise/rsync-deploy@v1.0
