@@ -4,6 +4,12 @@
 [Keep a Changelog](https://keepachangelog.com/ko/1.0.0/)의 형식을 기본으로 구성됩니다.
 
 
+## [v1.0.6] 2021-11-15
+
+### Feature
+
+- beeclover/bp-online-training#110
+
 ## [v1.0.5] 2021-11-09
 
 ### Changed
