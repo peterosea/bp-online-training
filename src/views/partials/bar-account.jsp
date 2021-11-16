@@ -34,7 +34,7 @@
             <span>23개의 클래스</span>
           </a>
         </div>
-        <div class="row w-100 justify-content-between justify-content-lg-around">
+        <div class="row w-100 justify-content-around justify-content-lg-end" style="gap: 24px">
           <div class="col-auto px-0">
             <div class="education-progress">
               <%--
@@ -55,22 +55,6 @@
                 </svg>
                 <div class="label">
                   <span>수강완료</span>
-                  <div id="value" class="value">.</div>
-                </div>
-              </div>
-              <div
-                class="progress-circle education"
-                id="progress-circle"
-                data-pct="22"
-                data-all="100"
-                data-type="per"
-              >
-                <svg id="svg" width="140" height="140" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                  <circle r="60" cx="70" cy="70" fill="transparent" stroke-dasharray="376.99" stroke-dashoffset="0"></circle>
-                  <circle class="bar" id="bar" r="60" cx="70" cy="70" fill="transparent" stroke-dasharray="376.99" stroke-dashoffset="376.99"></circle>
-                </svg>
-                <div class="label">
-                  <span>진행률</span>
                   <div id="value" class="value">.</div>
                 </div>
               </div>
