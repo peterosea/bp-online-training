@@ -53,22 +53,20 @@
     }
     .btn-arrowPrev-group {
       position: absolute;
-      left: 60px;
-      top: 47px;
+      left: 28px;
+      top: 50%;
+      transform: translateY(-50%);
       @include media-breakpoint-up(lg) {
-        top: 50%;
         left: 0;
-        transform: translateY(-50%);
       }
     }
     .btn-arrowNext-group {
       position: absolute;
-      right: 60px;
-      top: 47px;
+      right: 28px;
+      top: 50%;
+      transform: translateY(-50%);
       @include media-breakpoint-up(lg) {
-        top: 50%;
         right: 0;
-        transform: translateY(-50%);
       }
     }
 
@@ -83,24 +81,18 @@
         padding-right: 68px;
       }
 
-      .number {
-        font-size: 28px;
-        font-weight: bold;
-        line-height: 50px;
-        margin-bottom: 30px;
-        @include media-breakpoint-up(lg) {
-          font-size: 34px;
-        }
-      }
       .title {
         font-size: 24px;
         font-weight: bold;
         line-height: 36px;
         margin-bottom: 20px;
+        padding-left: 48px;
+        padding-right: 48px;
         @include media-breakpoint-up(lg) {
           margin-bottom: 13px;
           line-height: 43px;
           font-size: 34px;
+          padding: 0;
         }
       }
       .title2 {
