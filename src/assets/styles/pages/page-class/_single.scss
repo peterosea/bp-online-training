@@ -56,7 +56,7 @@
       top: 50%;
       transform: translateY(-50%);
       @include media-breakpoint-up(lg) {
-        transform: translateY(-1.6em);
+        transform: translateY(-1.4em);
       }
     }
     .btn-arrowNext-group {
@@ -65,7 +65,7 @@
       top: 50%;
       transform: translateY(-50%);
       @include media-breakpoint-up(lg) {
-        transform: translateY(-1.6em);
+        transform: translateY(-1.4em);
       }
     }
 
