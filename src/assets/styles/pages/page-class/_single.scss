@@ -22,7 +22,7 @@
   }
 
   &-top-header {
-    padding-top: 58px;
+    margin-top: 58px;
     margin-bottom: 58px;
     position: relative;
 
@@ -34,7 +34,6 @@
       text-decoration: none;
       color: #666666;
       line-height: 1;
-      margin-top: 20px;
 
       i {
         font-size: 34px;
@@ -53,20 +52,20 @@
     }
     .btn-arrowPrev-group {
       position: absolute;
-      left: 28px;
+      left: 0;
       top: 50%;
       transform: translateY(-50%);
       @include media-breakpoint-up(lg) {
-        left: 0;
+        transform: translateY(-1.6em);
       }
     }
     .btn-arrowNext-group {
       position: absolute;
-      right: 28px;
+      right: 0;
       top: 50%;
       transform: translateY(-50%);
       @include media-breakpoint-up(lg) {
-        right: 0;
+        transform: translateY(-1.6em);
       }
     }
 
@@ -79,6 +78,10 @@
       @include media-breakpoint-up(lg) {
         padding-left: 68px;
         padding-right: 68px;
+      }
+
+      .titleWrap {
+        position: relative;
       }
 
       .title {
