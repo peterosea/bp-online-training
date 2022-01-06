@@ -14,7 +14,6 @@
           <div class="label">이전레슨</div>
         </a>
         <div class="s1-top-header-content">
-          <div class="number">03_01</div>
           <div class="title">스케치업 모델을 이용한 프레젠테이션 제작 및 시각화 프로세스</div>
           <div class="title2">V-Ray for SketchUp 을 활용한 인테리어 투시도 제작</div>
         </div>
