@@ -123,8 +123,9 @@
             </li>
             <li class="noti-item">
               <div class="noti-content">
+                클래스별 수강 종료일이 아닌<br/>
                 고객님의 수강 종료일이<br/>
-                <b>15</b>일 남았습니다.<br/>
+                30일 남았습니다
                 <a href="#" class="history">내 수강내역 확인하기</a>
               </div>
             </li>
@@ -164,14 +165,24 @@
               </div>
             </li>
             <li>
+              <div class="gnb-submenu-title">현재 수강중인 클래스</div>
               <ul class="gnb-submenu-list">
                 <li>
-                  <a href="#" class="dropdown-item">수강중인 클래스</a>
+                  <a href="#" class="dropdown-item">건설/토목</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item">수강중인 클래스</a>
+                  <a href="#" class="dropdown-item">포인트클라우드</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">웹툰/미디어</a>
                 </li>
               </ul>
+            </li>
+            <li>
+              <div class="gnb-submenu-benefit">
+                고객님은 빌딩캠퍼스의 모든<br/>
+                레슨을 수강하실 수 있습니다.
+              </div>
             </li>
             <%-- 로그인 상태 end --%>
             <%-- 로그인 안된 상태 start --%>

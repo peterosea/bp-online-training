@@ -45,5 +45,22 @@
     .dropdown-item:hover {
       background-color: transparent;
     }
+    a {
+      color: #666;
+    }
+  }
+  .gnb-submenu-title {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-weight: bold;
+  }
+  .gnb-submenu-benefit {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+    color: #666;
   }
 }
