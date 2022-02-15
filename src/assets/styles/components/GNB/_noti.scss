@@ -14,12 +14,36 @@
   .noti {
     &-submenu {
       padding: 0;
+      height: 290px;
+      overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+        background-color: transparent;
+        width: 6px;
+        height: 6px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: var(--zhen-zhu-bai-pearl);
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: var(--super-silver);
+      }
     }
     &-item {
       padding: 16px 24px;
       margin: 0;
       &:not(:last-child) {
         border-bottom: 1px solid var(--super-silver);
+      }
+
+      &-title {
+        padding: 26px 24px 0;
+        margin: 0;
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--black-out);
       }
     }
     &-header {
@@ -40,6 +64,21 @@
         margin-top: 4px;
         display: inline-block;
       }
+    }
+    &-close-btn {
+      text-decoration: none;
+      color: #666666;
+      border: 1px solid var(--cerebral-grey);
+      border-radius: 2px;
+      white-space: nowrap;
+      padding: 4px 15px 5px;
+      font-size: 13px;
+      font-weight: normal;
+      background-color: white;
+    }
+
+    &-content + .noti-close-btn {
+      margin-top: 8px;
     }
   }
 }
