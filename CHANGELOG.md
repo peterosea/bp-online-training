@@ -3,6 +3,12 @@
 이 프로젝트에서 주목할만한 모든 변경 사항이이 파일에 문서화됩니다.
 [Keep a Changelog](https://keepachangelog.com/ko/1.0.0/)의 형식을 기본으로 구성됩니다.
 
+## [v1.0.14] 2022-02-15
+
+### Changed
+
+- 알림 노티 팝업 디자인 변경
+
 ## [v1.0.13] 2022-01-25
 
 ### Fixed
@@ -56,7 +62,7 @@
 
 ### Changed
 
-- 클래스 상세 
+- 클래스 상세
   - 학습목표 헤더 제거
   - 상세과정 description 제거
 
@@ -95,7 +101,7 @@
     </div>
     <div class="accordion-info-content">
       <h1 class="accordion-info-title">
-        수강중인 클래스 이름 첫번쨰 
+        수강중인 클래스 이름 첫번쨰
       </h1>
       <a href="#" class="btn dark">
         커리큘럼 확인하기
@@ -149,7 +155,7 @@
           ...
 ```
 
-`.accordion-body-list-item-header` 부분이 생기고 
+`.accordion-body-list-item-header` 부분이 생기고
 - title
 - link가 모두 해당 element안으로 들어감
 
