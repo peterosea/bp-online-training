@@ -107,19 +107,24 @@
             </svg>
           </button>
           <ul class="dropdown-menu gnb-submenu noti-submenu" aria-labelledby="notiDropdown">
+            <div class="noti-item-title">알림</div>
             <li class="noti-item">
-              <div class="noti-header">Architecture & Interior</div>
               <div class="noti-content">
-                <a href="#">설계/인테리어</a> 분야 클래스가 
+                <a href="#">설계/인테리어</a> 분야 클래스가
                 새로 오픈하였습니다.
               </div>
+              <button class="noti-close-btn">
+                확인
+              </button>
             </li>
             <li class="noti-item">
-              <div class="noti-header">Architecture & Interior</div>
               <div class="noti-content">
-                <a href="#">설계/인테리어</a> 분야 클래스가 
+                <a href="#">설계/인테리어</a> 분야 클래스가
                 새로 오픈하였습니다.
               </div>
+              <button class="noti-close-btn">
+                확인
+              </button>
             </li>
             <li class="noti-item">
               <div class="noti-content">
