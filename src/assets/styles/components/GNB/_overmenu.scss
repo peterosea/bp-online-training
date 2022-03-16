@@ -69,13 +69,6 @@
     margin: 0;
     max-width: 100%;
   }
-  // custom backdrop
-  @at-root {
-    body.modal-open .modal-backdrop {
-      margin-top: var(--barHeight);
-      max-height: calc(100vh - var(--barHeight));
-    }
-  }
 }
 
 // menu

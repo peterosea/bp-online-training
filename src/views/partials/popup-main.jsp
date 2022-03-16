@@ -12,4 +12,5 @@
   <%@ include file="popup-overmenu.jsp" %>
   <%@ include file="popup-noti.jsp" %>
   <%@ include file="popup-search.jsp" %>
+  <%@ include file="popup-instructor.jsp" %>
 </div>
