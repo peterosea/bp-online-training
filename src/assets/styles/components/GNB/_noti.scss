@@ -76,9 +76,38 @@
       font-weight: normal;
       background-color: white;
     }
+    &-rao-btn {
+      text-decoration: none;
+      color: #666666;
+      border: 1px solid var(--cerebral-grey);
+      border-radius: 2px;
+      white-space: nowrap;
+      padding: 4px 15px 5px;
+      font-size: 13px;
+      font-weight: normal;
+      background-color: white;
+    }
+    &-close-btn-dark {
+      text-decoration: none;
+      color: #666666;
+      border: 1px solid var(--cerebral-grey);
+      border-radius: 2px;
+      white-space: nowrap;
+      padding: 4px 15px 5px;
+      font-size: 13px;
+      font-weight: normal;
+      background-color: #ebebeb;
+    }
 
     &-content + .noti-close-btn {
       margin-top: 8px;
+    }
+
+    &-footer {
+      border-top: 1px solid var(--super-silver);
+      padding: 20px 24px;
+      display: flex;
+      gap: 4px;
     }
   }
 }

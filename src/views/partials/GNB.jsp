@@ -106,35 +106,41 @@
               </g>
             </svg>
           </button>
-          <ul class="dropdown-menu gnb-submenu noti-submenu" aria-labelledby="notiDropdown">
-            <div class="noti-item-title">알림</div>
-            <li class="noti-item">
-              <div class="noti-content">
-                <a href="#">설계/인테리어</a> 분야 클래스가
-                새로 오픈하였습니다.
-              </div>
-              <button class="noti-close-btn">
-                확인
-              </button>
-            </li>
-            <li class="noti-item">
-              <div class="noti-content">
-                <a href="#">설계/인테리어</a> 분야 클래스가
-                새로 오픈하였습니다.
-              </div>
-              <button class="noti-close-btn">
-                확인
-              </button>
-            </li>
-            <li class="noti-item">
-              <div class="noti-content">
-                클래스별 수강 종료일이 아닌<br/>
-                고객님의 수강 종료일이<br/>
-                30일 남았습니다
-                <a href="#" class="history">내 수강내역 확인하기</a>
-              </div>
-            </li>
-          </ul>
+          <div class="dropdown-menu gnb-submenu-wrap">
+            <ul class="gnb-submenu noti-submenu" aria-labelledby="notiDropdown">
+              <div class="noti-item-title">알림</div>
+              <li class="noti-item">
+                <div class="noti-content">
+                  <a href="#">설계/인테리어</a> 분야 클래스가
+                  새로 오픈하였습니다.
+                </div>
+                <button class="noti-close-btn">
+                  확인
+                </button>
+              </li>
+              <li class="noti-item">
+                <div class="noti-content">
+                  <a href="#">설계/인테리어</a> 분야 클래스가
+                  새로 오픈하였습니다.
+                </div>
+                <button class="noti-close-btn">
+                  확인
+                </button>
+              </li>
+              <li class="noti-item">
+                <div class="noti-content">
+                  클래스별 수강 종료일이 아닌<br/>
+                  고객님의 수강 종료일이<br/>
+                  30일 남았습니다
+                  <a href="#" class="history">내 수강내역 확인하기</a>
+                </div>
+              </li>
+            </ul>
+            <div class="noti-footer">
+                <button class="noti-rao-btn">모두읽음</button>
+                <button class="noti-close-btn-dark">닫기</button>
+            </div>
+          </div>
         </li>
         <li class="gnb-personal-item gnb-personal-account">
           <button class="gnb-menu-item gnb-submenu-btn disable_arrow p-0" type="button" id="accountModal" data-bs-toggle="dropdown"
