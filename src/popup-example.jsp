@@ -24,6 +24,7 @@
     <div class="btn dark" data-bs-toggle="modal" data-bs-target="#classReviewModal">클래스 모든강좌 수강 후기 작성</div>
     <div class="btn dark" data-bs-toggle="modal" data-bs-target="#feedbackModal">피드백</div>
     <div class="btn dark" data-bs-toggle="modal" data-bs-target="#shoppingcartModal">장바구니</div>
+    <div class="btn dark" data-bs-toggle="modal" data-bs-target="#instructorModal">강사소개</div>
   </div>
 </main>
 <%@ include file="views/layouts/body-close.jsp" %>
