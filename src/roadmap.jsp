@@ -12,7 +12,7 @@
       <div class="row">
         <!-- Imagemap : PC -->
         <div class="col-12 show-pc">
-          <img src="media/zeplin/roadmap-pc.png" usemap="#image-map-pc">
+          <img src="<%=zeplin%>/roadmap-pc.png" usemap="#image-map-pc" srcset="<%=zeplin%>/roadmap-pc.png 1x, <%=zeplin%>/roadmap-pc@2x.png 2x, <%=zeplin%>/roadmap-pc@3x.png 3x" >
 
           <map name="image-map-pc">
               <area target="" alt="기초과정 : SketchUp" title="기초과정 : SketchUp" href="/class_cat.jsp?CategoryCD=20000100" coords="121,196,360,292" shape="rect">
@@ -30,7 +30,7 @@
         </div>
         <!-- Imagemap : Tablet -->
         <div class="col-12 show-tablet">
-          <img src="media/zeplin/roadmap-tablet.png" usemap="#image-map-tablet">
+          <img src="<%=zeplin%>/roadmap-tablet.png" usemap="#image-map-tablet" srcset="<%=zeplin%>/roadmap-tablet.png 1x, <%=zeplin%>/roadmap-tablet@2x.png 2x, <%=zeplin%>/roadmap-tablet@3x.png 3x">
 
           <map name="image-map-tablet">
               <area target="" alt="기초과정 : SketchUp" title="기초과정 : SketchUp" href="/class_cat.jsp?CategoryCD=20000100" coords="100,196,290,315" shape="rect">
@@ -48,7 +48,7 @@
         </div>
         <!-- Imagemap : Mobile -->
         <div class="col-12 show-mo">
-          <img src="media/zeplin/roadmap-mo.png" usemap="#image-map-mo">
+          <img src="<%=zeplin%>/roadmap-mo.png" usemap="#image-map-mo" srcset="<%=zeplin%>/roadmap-mo.png 1x, <%=zeplin%>/roadmap-mo@2x.png 2x, <%=zeplin%>/roadmap-mo@3x.png 3x">
 
           <map name="image-map-mo">
               <area target="" alt="기초과정 : SketchUp" title="기초과정 : SketchUp" href="/class_cat.jsp?CategoryCD=20000100" coords="2,137,139,207" shape="rect">

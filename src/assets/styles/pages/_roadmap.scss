@@ -11,6 +11,11 @@ svg.simple-flow-line {
 }
 
 .roadmap {
+  .roadmap-imagemap {
+    .col-12 {
+      text-align: center;
+    }
+  }
   .show-pc, .show-tablet {
     display: none;
   }
