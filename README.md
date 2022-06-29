@@ -26,3 +26,11 @@ dist 빌드된 파일 압축 첨부
 
 - zeplin 이미지 폴더압축
 - dist 폴더압축
+
+### peter notice : 20220629
+
+1. 작업후에 아래 코드를 활용해서 src.tar 압축파일 생성
+```
+sh deploy-src.sh
+```
+2. 이미지는 src/media/zeplin 폴더안에

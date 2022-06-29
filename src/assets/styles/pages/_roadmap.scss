@@ -11,6 +11,28 @@ svg.simple-flow-line {
 }
 
 .roadmap {
+  .show-pc, .show-tablet {
+    display: none;
+  }
+  .show-mo {
+    display: block;
+  }
+  @media (min-width: 980px) {
+    .show-mo {
+      display: none;
+    }
+    .show-tablet {
+      display: block;
+    }
+  }
+  @media (min-width: 1240px) {
+    .show-tablet {
+      display: none;
+    }
+    .show-pc {
+      display: block;
+    }
+  }
   &-canvas {
     position: relative;
     > .row {
