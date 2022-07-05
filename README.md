@@ -29,8 +29,14 @@ dist 빌드된 파일 압축 첨부
 
 ### peter notice : 20220629
 
-1. 작업후에 아래 코드를 활용해서 src.tar 압축파일 생성
+1. 작업후에 아래 코드로 JS 및 CSS 파일 컴파일
+```
+npm run build
+```
+
+2. 아래 코드를 활용해서 src.tar 압축파일 생성
 ```
 tar -rvf src.tar src
 ```
-2. 이미지는 src/media/zeplin 폴더안에
+
+3. 이미지는 src/media/zeplin 폴더안에
